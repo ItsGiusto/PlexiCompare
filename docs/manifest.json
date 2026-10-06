@@ -1,19 +1,12 @@
 {
  "title": "Plexi settings, back to back",
- "intro": "One performance, re-amped through every setup. Flip between them while it plays and hear what actually changes.",
+ "intro": "Clips re-amped through every setup. Flip between them while it plays to hear what actually changes.",
  "settings": [
   {
    "id": "original-mic",
    "group": "Original mic",
    "label": "Original mic",
    "detail": "Mic'd amp from the original DI take (67 settings, yes attenuator), not re-amped",
-   "note": ""
-  },
-  {
-   "id": "18-watt",
-   "group": "18 watt",
-   "label": "18 watt",
-   "detail": "",
    "note": ""
   },
   {
@@ -133,6 +126,13 @@
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
    "detail": "volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
+   "note": ""
+  },
+  {
+   "id": "18-watt",
+   "group": "18 watt",
+   "label": "18 watt",
+   "detail": "Provided as a control group, this is the only set of clips from a separate amp entirely, a 1974x 18 watt. Played with the tone control at 10 and volume at 8 on the vibrato channel, but through the same 16x4 greenback cab.",
    "note": ""
   }
  ],

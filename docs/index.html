@@ -185,10 +185,6 @@ th { color: var(--mute); font-weight: 600; }
     <div class="panel" id="panel" aria-live="polite"></div>
     <section class="setups">
       <h2>Setups</h2>
-      <details class="pairs" id="pairsBox" hidden>
-        <summary id="pairsSummary"></summary>
-        <div class="pairlist" id="pairlist"></div>
-      </details>
       <div id="setups"></div>
     </section>
   </section>
@@ -418,7 +414,7 @@ function renderRiffs() {
 
 function renderModes() {
   const box = $('#modes'); box.replaceChildren();
-  for (const [id, name] of [['compare', 'Compare'], ['blind', 'Blind'], ['abx', 'ABX']]) {
+  for (const [id, name] of [['compare', 'Compare']]) {
     box.append(h('button', { role: 'tab', 'aria-selected': S.mode === id ? 'true' : 'false', onclick: () => setMode(id) }, name));
   }
 }

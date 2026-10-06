@@ -1,0 +1,224 @@
+{
+ "title": "Plexi settings, back to back",
+ "intro": "One performance, re-amped through every setup. Flip between them while it plays and hear what actually changes.",
+ "settings": {
+  "original-mic": {
+   "label": "Original mic",
+   "detail": "Mic'd amp from the original DI take (67 settings, yes attenuator), not re-amped",
+   "source_name": "original_mic"
+  },
+  "18-watt": {
+   "label": "18 watt",
+   "detail": "",
+   "source_name": "18 watt"
+  },
+  "67-settings-022-pi": {
+   "label": "67: 022 pi",
+   "detail": "022 pi",
+   "source_name": "67 settings 022 pi"
+  },
+  "67-settings-no-attenutaor": {
+   "label": "67: no attenuator",
+   "detail": "no attenuator",
+   "source_name": "67 settings no attenutaor"
+  },
+  "67-settings-yes-attenuator": {
+   "label": "67: yes attenuator",
+   "detail": "yes attenuator",
+   "source_name": "67 settings yes attenuator"
+  },
+  "67-settings-022-50p50": {
+   "label": "67: 022, 50+50",
+   "detail": "022, 50+50",
+   "source_name": "67 settings 022 50+50"
+  },
+  "67-settings-022-10k-50p50": {
+   "label": "67: 022, 10k, 50+50",
+   "detail": "022, 10k, 50+50",
+   "source_name": "67 settings 022 10k 50+50"
+  },
+  "67-settings-lower-bias-022-10k-50p50": {
+   "label": "67: lower bias, 022, 10k, 50+50",
+   "detail": "lower bias, 022, 10k, 50+50",
+   "source_name": "67 settings lower bias 022 10k 50+50"
+  },
+  "73-settings-volume-at-5-100pf-bright-cap": {
+   "label": "73: volume at 5, 100pf bright cap",
+   "detail": "volume at 5, 100pf bright cap",
+   "source_name": "73 settings volume at 5 100pf bright cap"
+  },
+  "73-volume-at-5-4700-bright-cap": {
+   "label": "73: volume at 5, 4700 bright cap",
+   "detail": "volume at 5, 4700 bright cap",
+   "source_name": "73 volume at 5 4700 bright cap"
+  },
+  "73-volume-at-8-100pf-bright-cap": {
+   "label": "73: volume at 8, 100pf bright cap",
+   "detail": "volume at 8, 100pf bright cap",
+   "source_name": "73 volume at 8 100pf bright cap"
+  },
+  "73-settings-volume-at-8-with-4700-bright-cap": {
+   "label": "73: volume at 8, 4700 bright cap",
+   "detail": "volume at 8, 4700 bright cap",
+   "source_name": "73 settings volume at 8 with 4700 bright cap"
+  },
+  "73-volume-at-8-100pf-bright-cap-022-pi": {
+   "label": "73: volume at 8, 100pf bright cap, 022 pi",
+   "detail": "volume at 8, 100pf bright cap, 022 pi",
+   "source_name": "73 volume at 8 100pf bright cap 022 pi"
+  },
+  "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+   "label": "73: volume at 8, 4700 bright cap, 022 pi",
+   "detail": "volume at 8, 4700 bright cap, 022 pi",
+   "source_name": "73 settings volume at 8 4700 bright cap 022 pi"
+  },
+  "73-volume-at-8-4700-bright-022-50p50": {
+   "label": "73: volume at 8, 4700 bright cap, 022, 50+50",
+   "detail": "volume at 8, 4700 bright cap, 022, 50+50",
+   "source_name": "73 volume at 8 4700 bright 022 50+50"
+  },
+  "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+   "label": "73: volume at 8, 4700 bright cap, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, 022, 10k, 50+50",
+   "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50"
+  },
+  "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+   "label": "73: volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
+   "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50 jumpered channels"
+  },
+  "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+   "label": "73: volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
+   "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50 lower bias"
+  },
+  "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+   "label": "73: volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
+   "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50 normal channel"
+  }
+ },
+ "riffs": {
+  "1": {
+   "title": "Neck, chordal textures",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat neck chordal textures"
+  },
+  "2": {
+   "title": "Bridge, chordal textures",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat bridge chordal textures"
+  },
+  "3": {
+   "title": "Neck, low blues riff",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat neck low blues riff"
+  },
+  "4": {
+   "title": "Bridge, low blues riff",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat bridge low blues riff"
+  },
+  "5": {
+   "title": "Neck, shuffle",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat neck shuffle"
+  },
+  "6": {
+   "title": "Bridge, shuffle",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat bridge shuffle"
+  },
+  "7": {
+   "title": "Neck, single notes",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat neck single notes"
+  },
+  "8": {
+   "title": "Bridge, single notes",
+   "guitar": "Alnico 2 Strat",
+   "source_name": "alnico 2 strat bridge single notes"
+  },
+  "9": {
+   "title": "Neck, chordal textures",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat neck chordal textures"
+  },
+  "10": {
+   "title": "Bridge, chordal textures",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat bridge chordal textures"
+  },
+  "11": {
+   "title": "Neck, low blues riff",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat neck low blues riff"
+  },
+  "12": {
+   "title": "Bridge, low blues riff",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat bridge low blues riff"
+  },
+  "13": {
+   "title": "Neck, shuffle",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat neck shuffle"
+  },
+  "14": {
+   "title": "Bridge, shuffle",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat bridge shuffle"
+  },
+  "15": {
+   "title": "Neck, single notes",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat neck single notes"
+  },
+  "16": {
+   "title": "Bridge, single notes",
+   "guitar": "Ceramic Strat",
+   "source_name": "ceramic strat bridge single notes"
+  },
+  "17": {
+   "title": "Neck, chordal textures",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF neck chordal textures"
+  },
+  "18": {
+   "title": "Bridge, chordal textures",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF bridge chordal textures"
+  },
+  "19": {
+   "title": "Neck, low blues riff",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF neck low blues riff"
+  },
+  "20": {
+   "title": "Bridge, low blues riff",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF bridge low blues riff"
+  },
+  "21": {
+   "title": "Neck, shuffle",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF neck shuffle"
+  },
+  "22": {
+   "title": "Bridge, shuffle",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF bridge shuffle"
+  },
+  "23": {
+   "title": "Neck, single notes",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF neck single notes"
+  },
+  "24": {
+   "title": "Bridge, single notes",
+   "guitar": "Les Paul PAF",
+   "source_name": "les paul PAF bridge single notes"
+  }
+ },
+ "featured": []
+}

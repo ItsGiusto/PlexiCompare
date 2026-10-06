@@ -1,0 +1,3631 @@
+{
+ "title": "Plexi settings, back to back",
+ "intro": "One performance, re-amped through every setup. Flip between them while it plays and hear what actually changes.",
+ "settings": [
+  {
+   "id": "original-mic",
+   "group": "Original mic",
+   "label": "Original mic",
+   "detail": "Mic'd amp from the original DI take (67 settings, yes attenuator), not re-amped",
+   "note": ""
+  },
+  {
+   "id": "18-watt",
+   "group": "18 watt",
+   "label": "18 watt",
+   "detail": "",
+   "note": ""
+  },
+  {
+   "id": "67-settings-022-pi",
+   "group": "67 settings",
+   "label": "67: 022 pi",
+   "detail": "022 pi",
+   "note": ""
+  },
+  {
+   "id": "67-settings-no-attenutaor",
+   "group": "67 settings",
+   "label": "67: no attenuator",
+   "detail": "no attenuator",
+   "note": ""
+  },
+  {
+   "id": "67-settings-yes-attenuator",
+   "group": "67 settings",
+   "label": "67: yes attenuator",
+   "detail": "yes attenuator",
+   "note": ""
+  },
+  {
+   "id": "67-settings-022-50p50",
+   "group": "67 settings",
+   "label": "67: 022, 50+50",
+   "detail": "022, 50+50",
+   "note": ""
+  },
+  {
+   "id": "67-settings-022-10k-50p50",
+   "group": "67 settings",
+   "label": "67: 022, 10k, 50+50",
+   "detail": "022, 10k, 50+50",
+   "note": ""
+  },
+  {
+   "id": "67-settings-lower-bias-022-10k-50p50",
+   "group": "67 settings",
+   "label": "67: lower bias, 022, 10k, 50+50",
+   "detail": "lower bias, 022, 10k, 50+50",
+   "note": ""
+  },
+  {
+   "id": "73-settings-volume-at-5-100pf-bright-cap",
+   "group": "73 settings",
+   "label": "73: volume at 5, 100pf bright cap",
+   "detail": "volume at 5, 100pf bright cap",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-5-4700-bright-cap",
+   "group": "73 settings",
+   "label": "73: volume at 5, 4700 bright cap",
+   "detail": "volume at 5, 4700 bright cap",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-100pf-bright-cap",
+   "group": "73 settings",
+   "label": "73: volume at 8, 100pf bright cap",
+   "detail": "volume at 8, 100pf bright cap",
+   "note": ""
+  },
+  {
+   "id": "73-settings-volume-at-8-with-4700-bright-cap",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap",
+   "detail": "volume at 8, 4700 bright cap",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-100pf-bright-cap-022-pi",
+   "group": "73 settings",
+   "label": "73: volume at 8, 100pf bright cap, 022 pi",
+   "detail": "volume at 8, 100pf bright cap, 022 pi",
+   "note": ""
+  },
+  {
+   "id": "73-settings-volume-at-8-4700-bright-cap-022-pi",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap, 022 pi",
+   "detail": "volume at 8, 4700 bright cap, 022 pi",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-4700-bright-022-50p50",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap, 022, 50+50",
+   "detail": "volume at 8, 4700 bright cap, 022, 50+50",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, 022, 10k, 50+50",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
+   "note": ""
+  },
+  {
+   "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel",
+   "group": "73 settings",
+   "label": "73: volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
+   "detail": "volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
+   "note": ""
+  }
+ ],
+ "pairs": [
+  {
+   "a": "original-mic",
+   "b": "67-settings-yes-attenuator",
+   "change": "same settings, original mic take vs the re-amp of it"
+  },
+  {
+   "a": "67-settings-no-attenutaor",
+   "b": "67-settings-yes-attenuator",
+   "change": "attenuator: no and yes"
+  },
+  {
+   "a": "67-settings-022-50p50",
+   "b": "67-settings-022-10k-50p50",
+   "change": "10k: with and without"
+  },
+  {
+   "a": "67-settings-022-10k-50p50",
+   "b": "67-settings-lower-bias-022-10k-50p50",
+   "change": "lower bias: with and without"
+  },
+  {
+   "a": "73-settings-volume-at-5-100pf-bright-cap",
+   "b": "73-volume-at-5-4700-bright-cap",
+   "change": "bright cap: 100pf and 4700"
+  },
+  {
+   "a": "73-settings-volume-at-5-100pf-bright-cap",
+   "b": "73-volume-at-8-100pf-bright-cap",
+   "change": "volume: 5 and 8"
+  },
+  {
+   "a": "73-volume-at-5-4700-bright-cap",
+   "b": "73-settings-volume-at-8-with-4700-bright-cap",
+   "change": "volume: 5 and 8"
+  },
+  {
+   "a": "73-volume-at-8-100pf-bright-cap",
+   "b": "73-settings-volume-at-8-with-4700-bright-cap",
+   "change": "bright cap: 100pf and 4700"
+  },
+  {
+   "a": "73-volume-at-8-100pf-bright-cap",
+   "b": "73-volume-at-8-100pf-bright-cap-022-pi",
+   "change": "022 pi: with and without"
+  },
+  {
+   "a": "73-settings-volume-at-8-with-4700-bright-cap",
+   "b": "73-settings-volume-at-8-4700-bright-cap-022-pi",
+   "change": "022 pi: with and without"
+  },
+  {
+   "a": "73-volume-at-8-100pf-bright-cap-022-pi",
+   "b": "73-settings-volume-at-8-4700-bright-cap-022-pi",
+   "change": "bright cap: 100pf and 4700"
+  },
+  {
+   "a": "73-volume-at-8-4700-bright-022-50p50",
+   "b": "73-volume-at-8-4700-bright-cap-10k-022-50p50",
+   "change": "10k: with and without"
+  },
+  {
+   "a": "73-volume-at-8-4700-bright-cap-10k-022-50p50",
+   "b": "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels",
+   "change": "jumpered channels: with and without"
+  },
+  {
+   "a": "73-volume-at-8-4700-bright-cap-10k-022-50p50",
+   "b": "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias",
+   "change": "lower bias: with and without"
+  },
+  {
+   "a": "73-volume-at-8-4700-bright-cap-10k-022-50p50",
+   "b": "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel",
+   "change": "normal channel: with and without"
+  },
+  {
+   "a": "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels",
+   "b": "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel",
+   "change": "channels: jumpered channels and normal channel"
+  }
+ ],
+ "riffs": [
+  {
+   "n": 1,
+   "name": "alnico 2 strat neck chordal textures",
+   "guitar": "Alnico 2 Strat",
+   "label": "Neck, chordal textures",
+   "duration": 9.454,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-01/18-watt.mp3",
+     "gain_db": 0.84,
+     "offset_ms": 2.18,
+     "lufs": -19.08,
+     "peak_db": -9.68
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-01/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.09,
+     "offset_ms": 2.18,
+     "lufs": -18.15,
+     "peak_db": -9.5
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-01/67-settings-022-50p50.mp3",
+     "gain_db": -0.12,
+     "offset_ms": 2.18,
+     "lufs": -18.12,
+     "peak_db": -9.25
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-01/67-settings-022-pi.mp3",
+     "gain_db": 0.22,
+     "offset_ms": 2.18,
+     "lufs": -18.46,
+     "peak_db": -9.79
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-01/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.1,
+     "offset_ms": 2.18,
+     "lufs": -18.34,
+     "peak_db": -9.11
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-01/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.67,
+     "offset_ms": 2.18,
+     "lufs": -18.91,
+     "peak_db": -9.5
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-01/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.11,
+     "offset_ms": 2.18,
+     "lufs": -18.35,
+     "peak_db": -9.0
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-01/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 2.67,
+     "offset_ms": 2.18,
+     "lufs": -20.91,
+     "peak_db": -11.24
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-01/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.51,
+     "offset_ms": 2.18,
+     "lufs": -18.75,
+     "peak_db": -9.95
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-01/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.14,
+     "offset_ms": 2.18,
+     "lufs": -18.1,
+     "peak_db": -9.69
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-01/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.97,
+     "offset_ms": 2.18,
+     "lufs": -19.21,
+     "peak_db": -9.93
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-01/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": -0.43,
+     "offset_ms": 2.18,
+     "lufs": -17.81,
+     "peak_db": -9.54
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-01/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.23,
+     "offset_ms": 2.18,
+     "lufs": -18.01,
+     "peak_db": -9.59
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-01/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.09,
+     "offset_ms": 2.18,
+     "lufs": -18.15,
+     "peak_db": -9.57
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-01/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.16,
+     "offset_ms": 2.18,
+     "lufs": -18.4,
+     "peak_db": -9.52
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-01/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": -1.78,
+     "offset_ms": 2.18,
+     "lufs": -16.47,
+     "peak_db": -7.31
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-01/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.52,
+     "offset_ms": 2.18,
+     "lufs": -17.72,
+     "peak_db": -8.97
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-01/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -2.58,
+     "offset_ms": 2.18,
+     "lufs": -15.66,
+     "peak_db": -7.21
+    },
+    "original-mic": {
+     "url": "audio/riff-01/original-mic.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -18.24,
+     "peak_db": -8.7
+    }
+   }
+  },
+  {
+   "n": 2,
+   "name": "alnico 2 strat bridge chordal textures",
+   "guitar": "Alnico 2 Strat",
+   "label": "Bridge, chordal textures",
+   "duration": 6.947,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-02/18-watt.mp3",
+     "gain_db": 0.47,
+     "offset_ms": 2.07,
+     "lufs": -20.21,
+     "peak_db": -9.94
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-02/67-settings-022-10k-50p50.mp3",
+     "gain_db": 0.19,
+     "offset_ms": 2.07,
+     "lufs": -19.93,
+     "peak_db": -10.6
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-02/67-settings-022-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.07,
+     "lufs": -19.74,
+     "peak_db": -10.34
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-02/67-settings-022-pi.mp3",
+     "gain_db": 0.34,
+     "offset_ms": 2.07,
+     "lufs": -20.08,
+     "peak_db": -10.61
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-02/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.43,
+     "offset_ms": 2.07,
+     "lufs": -20.17,
+     "peak_db": -10.84
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-02/67-settings-no-attenutaor.mp3",
+     "gain_db": 1.01,
+     "offset_ms": 2.07,
+     "lufs": -20.74,
+     "peak_db": -11.64
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-02/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.46,
+     "offset_ms": 2.07,
+     "lufs": -20.2,
+     "peak_db": -10.99
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-02/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 2.72,
+     "offset_ms": 2.07,
+     "lufs": -22.45,
+     "peak_db": -12.33
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-02/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.41,
+     "offset_ms": 2.07,
+     "lufs": -20.15,
+     "peak_db": -11.34
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-02/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.27,
+     "offset_ms": 2.07,
+     "lufs": -19.47,
+     "peak_db": -10.06
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-02/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -0.1,
+     "offset_ms": 2.07,
+     "lufs": -19.64,
+     "peak_db": -10.24
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-02/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": -0.31,
+     "offset_ms": 2.07,
+     "lufs": -19.43,
+     "peak_db": -9.5
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-02/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.31,
+     "offset_ms": 2.07,
+     "lufs": -19.42,
+     "peak_db": -10.54
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-02/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.35,
+     "offset_ms": 2.07,
+     "lufs": -19.39,
+     "peak_db": -10.7
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-02/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.06,
+     "offset_ms": 2.07,
+     "lufs": -19.68,
+     "peak_db": -10.47
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-02/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": -1.68,
+     "offset_ms": 2.07,
+     "lufs": -18.05,
+     "peak_db": -9.44
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-02/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.5,
+     "offset_ms": 2.07,
+     "lufs": -19.24,
+     "peak_db": -9.08
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-02/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -2.75,
+     "offset_ms": 2.07,
+     "lufs": -16.98,
+     "peak_db": -9.22
+    },
+    "original-mic": {
+     "url": "audio/riff-02/original-mic.mp3",
+     "gain_db": 0.25,
+     "offset_ms": 0.0,
+     "lufs": -19.98,
+     "peak_db": -10.53
+    }
+   }
+  },
+  {
+   "n": 3,
+   "name": "alnico 2 strat neck low blues riff",
+   "guitar": "Alnico 2 Strat",
+   "label": "Neck, low blues riff",
+   "duration": 7.025,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-03/18-watt.mp3",
+     "gain_db": -0.16,
+     "offset_ms": 2.32,
+     "lufs": -17.64,
+     "peak_db": -9.03
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-03/67-settings-022-10k-50p50.mp3",
+     "gain_db": 0.51,
+     "offset_ms": 2.32,
+     "lufs": -18.3,
+     "peak_db": -8.98
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-03/67-settings-022-50p50.mp3",
+     "gain_db": 0.17,
+     "offset_ms": 2.32,
+     "lufs": -17.97,
+     "peak_db": -8.9
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-03/67-settings-022-pi.mp3",
+     "gain_db": 0.98,
+     "offset_ms": 2.32,
+     "lufs": -18.77,
+     "peak_db": -9.78
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-03/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.76,
+     "offset_ms": 2.32,
+     "lufs": -18.56,
+     "peak_db": -9.26
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-03/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.55,
+     "offset_ms": 2.32,
+     "lufs": -18.35,
+     "peak_db": -9.48
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-03/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.32,
+     "lufs": -17.8,
+     "peak_db": -8.92
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-03/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.89,
+     "offset_ms": 2.32,
+     "lufs": -19.69,
+     "peak_db": -11.03
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-03/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.66,
+     "offset_ms": 2.32,
+     "lufs": -18.46,
+     "peak_db": -9.48
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-03/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.46,
+     "offset_ms": 2.32,
+     "lufs": -17.34,
+     "peak_db": -8.17
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-03/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.32,
+     "lufs": -17.8,
+     "peak_db": -9.36
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-03/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": -0.19,
+     "offset_ms": 2.32,
+     "lufs": -17.61,
+     "peak_db": -9.2
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-03/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.14,
+     "offset_ms": 2.32,
+     "lufs": -17.93,
+     "peak_db": -9.67
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-03/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.33,
+     "offset_ms": 2.32,
+     "lufs": -17.47,
+     "peak_db": -8.29
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-03/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.02,
+     "offset_ms": 2.32,
+     "lufs": -17.78,
+     "peak_db": -8.31
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-03/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": -0.22,
+     "offset_ms": 2.32,
+     "lufs": -17.58,
+     "peak_db": -7.93
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-03/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.63,
+     "offset_ms": 2.32,
+     "lufs": -17.17,
+     "peak_db": -9.12
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-03/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -0.84,
+     "offset_ms": 2.32,
+     "lufs": -16.96,
+     "peak_db": -7.79
+    },
+    "original-mic": {
+     "url": "audio/riff-03/original-mic.mp3",
+     "gain_db": -0.02,
+     "offset_ms": 0.0,
+     "lufs": -17.77,
+     "peak_db": -8.29
+    }
+   }
+  },
+  {
+   "n": 4,
+   "name": "alnico 2 strat bridge low blues riff",
+   "guitar": "Alnico 2 Strat",
+   "label": "Bridge, low blues riff",
+   "duration": 6.398,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-04/18-watt.mp3",
+     "gain_db": -0.27,
+     "offset_ms": 2.28,
+     "lufs": -19.45,
+     "peak_db": -9.45
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-04/67-settings-022-10k-50p50.mp3",
+     "gain_db": 0.24,
+     "offset_ms": 2.28,
+     "lufs": -19.96,
+     "peak_db": -10.87
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-04/67-settings-022-50p50.mp3",
+     "gain_db": -0.06,
+     "offset_ms": 2.28,
+     "lufs": -19.66,
+     "peak_db": -10.97
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-04/67-settings-022-pi.mp3",
+     "gain_db": 0.62,
+     "offset_ms": 2.28,
+     "lufs": -20.34,
+     "peak_db": -11.21
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-04/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.45,
+     "offset_ms": 2.28,
+     "lufs": -20.17,
+     "peak_db": -10.3
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-04/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.63,
+     "offset_ms": 2.28,
+     "lufs": -20.35,
+     "peak_db": -11.09
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-04/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.28,
+     "lufs": -19.72,
+     "peak_db": -10.03
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-04/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.71,
+     "offset_ms": 2.28,
+     "lufs": -21.44,
+     "peak_db": -11.72
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-04/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.99,
+     "offset_ms": 2.28,
+     "lufs": -20.71,
+     "peak_db": -10.27
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-04/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.02,
+     "offset_ms": 2.28,
+     "lufs": -19.7,
+     "peak_db": -9.01
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-04/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -0.2,
+     "offset_ms": 2.28,
+     "lufs": -19.52,
+     "peak_db": -9.6
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-04/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 0.26,
+     "offset_ms": 2.28,
+     "lufs": -19.98,
+     "peak_db": -10.68
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-04/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.41,
+     "offset_ms": 2.28,
+     "lufs": -20.13,
+     "peak_db": -11.26
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-04/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.11,
+     "offset_ms": 2.28,
+     "lufs": -19.62,
+     "peak_db": -9.38
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-04/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.3,
+     "offset_ms": 2.28,
+     "lufs": -20.02,
+     "peak_db": -9.63
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-04/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": -0.8,
+     "offset_ms": 2.28,
+     "lufs": -18.93,
+     "peak_db": -10.2
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-04/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.24,
+     "offset_ms": 2.28,
+     "lufs": -19.49,
+     "peak_db": -10.3
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-04/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -1.7,
+     "offset_ms": 2.28,
+     "lufs": -18.02,
+     "peak_db": -9.73
+    },
+    "original-mic": {
+     "url": "audio/riff-04/original-mic.mp3",
+     "gain_db": -0.09,
+     "offset_ms": 0.0,
+     "lufs": -19.64,
+     "peak_db": -9.14
+    }
+   }
+  },
+  {
+   "n": 5,
+   "name": "alnico 2 strat neck shuffle",
+   "guitar": "Alnico 2 Strat",
+   "label": "Neck, shuffle",
+   "duration": 6.999,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-05/18-watt.mp3",
+     "gain_db": 0.22,
+     "offset_ms": 2.31,
+     "lufs": -17.04,
+     "peak_db": -8.44
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-05/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.19,
+     "offset_ms": 2.31,
+     "lufs": -16.63,
+     "peak_db": -8.73
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-05/67-settings-022-50p50.mp3",
+     "gain_db": -0.28,
+     "offset_ms": 2.31,
+     "lufs": -16.54,
+     "peak_db": -8.65
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-05/67-settings-022-pi.mp3",
+     "gain_db": 0.28,
+     "offset_ms": 2.31,
+     "lufs": -17.11,
+     "peak_db": -9.45
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-05/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.2,
+     "offset_ms": 2.31,
+     "lufs": -17.02,
+     "peak_db": -9.27
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-05/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.68,
+     "offset_ms": 2.31,
+     "lufs": -17.5,
+     "peak_db": -9.65
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-05/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.31,
+     "lufs": -16.82,
+     "peak_db": -9.01
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-05/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 2.21,
+     "offset_ms": 2.31,
+     "lufs": -19.03,
+     "peak_db": -9.45
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-05/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.48,
+     "offset_ms": 2.31,
+     "lufs": -17.3,
+     "peak_db": -9.09
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-05/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.31,
+     "offset_ms": 2.31,
+     "lufs": -16.51,
+     "peak_db": -7.83
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-05/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.35,
+     "offset_ms": 2.31,
+     "lufs": -17.17,
+     "peak_db": -8.31
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-05/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": -0.37,
+     "offset_ms": 2.31,
+     "lufs": -16.45,
+     "peak_db": -8.53
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-05/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.23,
+     "offset_ms": 2.31,
+     "lufs": -16.59,
+     "peak_db": -8.68
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-05/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.39,
+     "offset_ms": 2.31,
+     "lufs": -16.43,
+     "peak_db": -8.19
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-05/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.01,
+     "offset_ms": 2.31,
+     "lufs": -16.81,
+     "peak_db": -8.48
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-05/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 53.18,
+     "offset_ms": 2.31,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-05/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.81,
+     "offset_ms": 2.31,
+     "lufs": -16.02,
+     "peak_db": -8.36
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-05/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -1.39,
+     "offset_ms": 2.31,
+     "lufs": -15.43,
+     "peak_db": -7.88
+    },
+    "original-mic": {
+     "url": "audio/riff-05/original-mic.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -16.82,
+     "peak_db": -9.11
+    }
+   }
+  },
+  {
+   "n": 6,
+   "name": "alnico 2 strat bridge shuffle",
+   "guitar": "Alnico 2 Strat",
+   "label": "Bridge, shuffle",
+   "duration": 6.999,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-06/18-watt.mp3",
+     "gain_db": -0.02,
+     "offset_ms": 2.04,
+     "lufs": -18.33,
+     "peak_db": -9.45
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-06/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.16,
+     "offset_ms": 2.04,
+     "lufs": -18.19,
+     "peak_db": -10.36
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-06/67-settings-022-50p50.mp3",
+     "gain_db": -0.21,
+     "offset_ms": 2.04,
+     "lufs": -18.14,
+     "peak_db": -9.86
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-06/67-settings-022-pi.mp3",
+     "gain_db": 0.13,
+     "offset_ms": 2.04,
+     "lufs": -18.49,
+     "peak_db": -10.37
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-06/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.15,
+     "offset_ms": 2.04,
+     "lufs": -18.5,
+     "peak_db": -9.4
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-06/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.7,
+     "offset_ms": 2.04,
+     "lufs": -19.05,
+     "peak_db": -9.53
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-06/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.18,
+     "offset_ms": 2.04,
+     "lufs": -18.53,
+     "peak_db": -9.22
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-06/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.83,
+     "offset_ms": 2.04,
+     "lufs": -20.18,
+     "peak_db": -11.83
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-06/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.62,
+     "offset_ms": 2.04,
+     "lufs": -18.97,
+     "peak_db": -10.39
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-06/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.19,
+     "offset_ms": 2.04,
+     "lufs": -18.16,
+     "peak_db": -8.92
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-06/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -0.2,
+     "offset_ms": 2.04,
+     "lufs": -18.15,
+     "peak_db": -9.46
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-06/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.04,
+     "lufs": -18.35,
+     "peak_db": -9.07
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-06/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.02,
+     "offset_ms": 2.04,
+     "lufs": -18.33,
+     "peak_db": -9.5
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-06/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.33,
+     "offset_ms": 2.04,
+     "lufs": -18.03,
+     "peak_db": -8.93
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-06/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.02,
+     "offset_ms": 2.04,
+     "lufs": -18.37,
+     "peak_db": -9.42
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-06/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 51.65,
+     "offset_ms": 2.04,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-06/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.63,
+     "offset_ms": 2.04,
+     "lufs": -17.72,
+     "peak_db": -8.97
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-06/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -1.54,
+     "offset_ms": 2.04,
+     "lufs": -16.82,
+     "peak_db": -8.43
+    },
+    "original-mic": {
+     "url": "audio/riff-06/original-mic.mp3",
+     "gain_db": 0.02,
+     "offset_ms": 0.0,
+     "lufs": -18.37,
+     "peak_db": -9.37
+    }
+   }
+  },
+  {
+   "n": 7,
+   "name": "alnico 2 strat neck single notes",
+   "guitar": "Alnico 2 Strat",
+   "label": "Neck, single notes",
+   "duration": 8.176,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-07/18-watt.mp3",
+     "gain_db": 0.93,
+     "offset_ms": 0.0,
+     "lufs": -19.71,
+     "peak_db": -9.59
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-07/67-settings-022-10k-50p50.mp3",
+     "gain_db": 0.2,
+     "offset_ms": 0.0,
+     "lufs": -18.98,
+     "peak_db": -8.48
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-07/67-settings-022-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -18.79,
+     "peak_db": -8.27
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-07/67-settings-022-pi.mp3",
+     "gain_db": 0.7,
+     "offset_ms": 0.0,
+     "lufs": -19.49,
+     "peak_db": -9.28
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-07/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 1.28,
+     "offset_ms": 0.0,
+     "lufs": -20.07,
+     "peak_db": -9.37
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-07/67-settings-no-attenutaor.mp3",
+     "gain_db": 1.56,
+     "offset_ms": 0.0,
+     "lufs": -20.34,
+     "peak_db": -10.4
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-07/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.9,
+     "offset_ms": 0.0,
+     "lufs": -19.68,
+     "peak_db": -9.28
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-07/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 3.48,
+     "offset_ms": 0.0,
+     "lufs": -22.26,
+     "peak_db": -12.31
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-07/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": -1.07,
+     "offset_ms": 0.0,
+     "lufs": -17.72,
+     "peak_db": -9.02
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-07/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -1.86,
+     "offset_ms": 0.0,
+     "lufs": -16.93,
+     "peak_db": -7.78
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-07/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.58,
+     "offset_ms": 0.0,
+     "lufs": -19.37,
+     "peak_db": -9.6
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-07/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": -1.84,
+     "offset_ms": 0.0,
+     "lufs": -16.95,
+     "peak_db": -7.83
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-07/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -1.42,
+     "offset_ms": 0.0,
+     "lufs": -17.36,
+     "peak_db": -8.73
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-07/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -2.01,
+     "offset_ms": 0.0,
+     "lufs": -16.77,
+     "peak_db": -7.46
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-07/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -1.65,
+     "offset_ms": 0.0,
+     "lufs": -17.13,
+     "peak_db": -8.06
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-07/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": -4.02,
+     "offset_ms": 0.0,
+     "lufs": -14.76,
+     "peak_db": -6.57
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-07/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -1.35,
+     "offset_ms": 0.0,
+     "lufs": -17.44,
+     "peak_db": -7.68
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-07/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -3.96,
+     "offset_ms": 0.0,
+     "lufs": -14.83,
+     "peak_db": -6.75
+    },
+    "original-mic": {
+     "url": "audio/riff-07/original-mic.mp3",
+     "gain_db": 0.72,
+     "offset_ms": 0.0,
+     "lufs": -19.51,
+     "peak_db": -9.02
+    }
+   }
+  },
+  {
+   "n": 8,
+   "name": "alnico 2 strat bridge single notes",
+   "guitar": "Alnico 2 Strat",
+   "label": "Bridge, single notes",
+   "duration": 7.393,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-08/18-watt.mp3",
+     "gain_db": 1.27,
+     "offset_ms": 0.0,
+     "lufs": -22.31,
+     "peak_db": -12.03
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-08/67-settings-022-10k-50p50.mp3",
+     "gain_db": 0.59,
+     "offset_ms": 0.0,
+     "lufs": -21.63,
+     "peak_db": -10.15
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-08/67-settings-022-50p50.mp3",
+     "gain_db": 0.46,
+     "offset_ms": 0.0,
+     "lufs": -21.5,
+     "peak_db": -10.2
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-08/67-settings-022-pi.mp3",
+     "gain_db": 1.08,
+     "offset_ms": 0.0,
+     "lufs": -22.11,
+     "peak_db": -11.11
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-08/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 1.82,
+     "offset_ms": 0.0,
+     "lufs": -22.85,
+     "peak_db": -11.41
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-08/67-settings-no-attenutaor.mp3",
+     "gain_db": 1.85,
+     "offset_ms": 0.0,
+     "lufs": -22.89,
+     "peak_db": -11.86
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-08/67-settings-yes-attenuator.mp3",
+     "gain_db": 1.49,
+     "offset_ms": 0.0,
+     "lufs": -22.52,
+     "peak_db": -11.57
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-08/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 4.06,
+     "offset_ms": 0.0,
+     "lufs": -25.1,
+     "peak_db": -14.22
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-08/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": -1.12,
+     "offset_ms": 0.0,
+     "lufs": -19.92,
+     "peak_db": -10.91
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-08/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -1.79,
+     "offset_ms": 0.0,
+     "lufs": -19.24,
+     "peak_db": -10.08
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-08/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -21.03,
+     "peak_db": -11.29
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-08/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": -1.72,
+     "offset_ms": 0.0,
+     "lufs": -19.32,
+     "peak_db": -9.82
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-08/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -1.38,
+     "offset_ms": 0.0,
+     "lufs": -19.65,
+     "peak_db": -10.33
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-08/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -2.0,
+     "offset_ms": 0.0,
+     "lufs": -19.03,
+     "peak_db": -9.81
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-08/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -1.61,
+     "offset_ms": 0.0,
+     "lufs": -19.42,
+     "peak_db": -10.37
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-08/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": -5.26,
+     "offset_ms": 0.0,
+     "lufs": -15.78,
+     "peak_db": -6.74
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-08/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -1.04,
+     "offset_ms": 0.0,
+     "lufs": -19.99,
+     "peak_db": -10.2
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-08/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": -5.36,
+     "offset_ms": 0.0,
+     "lufs": -15.67,
+     "peak_db": -7.17
+    },
+    "original-mic": {
+     "url": "audio/riff-08/original-mic.mp3",
+     "gain_db": 1.09,
+     "offset_ms": 0.0,
+     "lufs": -22.12,
+     "peak_db": -11.15
+    }
+   }
+  },
+  {
+   "n": 9,
+   "name": "ceramic strat neck chordal textures",
+   "guitar": "Ceramic Strat",
+   "label": "Neck, chordal textures",
+   "duration": 7.626,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-09/18-watt.mp3",
+     "gain_db": 51.63,
+     "offset_ms": 2.12,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-09/67-settings-022-10k-50p50.mp3",
+     "gain_db": -1.17,
+     "offset_ms": 2.12,
+     "lufs": -17.21,
+     "peak_db": -9.15
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-09/67-settings-022-50p50.mp3",
+     "gain_db": -1.12,
+     "offset_ms": 2.12,
+     "lufs": -17.25,
+     "peak_db": -9.06
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-09/67-settings-022-pi.mp3",
+     "gain_db": -0.79,
+     "offset_ms": 2.12,
+     "lufs": -17.59,
+     "peak_db": -9.65
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-09/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -1.04,
+     "offset_ms": 2.12,
+     "lufs": -17.33,
+     "peak_db": -9.2
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-09/67-settings-no-attenutaor.mp3",
+     "gain_db": -0.61,
+     "offset_ms": 2.12,
+     "lufs": -17.76,
+     "peak_db": -9.94
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-09/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.84,
+     "offset_ms": 2.12,
+     "lufs": -17.54,
+     "peak_db": -9.46
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-09/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.52,
+     "offset_ms": 2.12,
+     "lufs": -19.89,
+     "peak_db": -10.84
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-09/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 1.12,
+     "offset_ms": 2.12,
+     "lufs": -19.49,
+     "peak_db": -10.6
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-09/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.0,
+     "offset_ms": 2.12,
+     "lufs": -18.37,
+     "peak_db": -8.97
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-09/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.72,
+     "offset_ms": 2.12,
+     "lufs": -19.09,
+     "peak_db": -10.2
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-09/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 51.63,
+     "offset_ms": 2.12,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-09/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.12,
+     "lufs": -18.37,
+     "peak_db": -10.1
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-09/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.24,
+     "offset_ms": 2.12,
+     "lufs": -18.62,
+     "peak_db": -9.74
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-09/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.55,
+     "offset_ms": 2.12,
+     "lufs": -18.93,
+     "peak_db": -10.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-09/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 51.63,
+     "offset_ms": 2.12,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-09/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.76,
+     "offset_ms": 2.12,
+     "lufs": -17.61,
+     "peak_db": -8.94
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-09/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 51.63,
+     "offset_ms": 2.12,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-09/original-mic.mp3",
+     "gain_db": -1.38,
+     "offset_ms": 0.0,
+     "lufs": -16.99,
+     "peak_db": -9.34
+    }
+   }
+  },
+  {
+   "n": 10,
+   "name": "ceramic strat bridge chordal textures",
+   "guitar": "Ceramic Strat",
+   "label": "Bridge, chordal textures",
+   "duration": 7.628,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-10/18-watt.mp3",
+     "gain_db": 49.36,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-10/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.35,
+     "offset_ms": 0.0,
+     "lufs": -20.3,
+     "peak_db": -11.58
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-10/67-settings-022-50p50.mp3",
+     "gain_db": -0.38,
+     "offset_ms": 0.0,
+     "lufs": -20.26,
+     "peak_db": -11.29
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-10/67-settings-022-pi.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -20.64,
+     "peak_db": -11.57
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-10/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.01,
+     "offset_ms": 0.0,
+     "lufs": -20.63,
+     "peak_db": -11.48
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-10/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.55,
+     "offset_ms": 0.0,
+     "lufs": -21.19,
+     "peak_db": -12.2
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-10/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.25,
+     "offset_ms": 0.0,
+     "lufs": -20.9,
+     "peak_db": -11.96
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-10/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 2.13,
+     "offset_ms": 0.0,
+     "lufs": -22.77,
+     "peak_db": -13.28
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-10/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.43,
+     "offset_ms": 0.0,
+     "lufs": -21.07,
+     "peak_db": -11.76
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-10/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.81,
+     "offset_ms": 0.0,
+     "lufs": -19.83,
+     "peak_db": -10.25
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-10/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -1.06,
+     "offset_ms": 0.0,
+     "lufs": -19.58,
+     "peak_db": -10.32
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-10/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 49.36,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-10/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.01,
+     "offset_ms": 0.0,
+     "lufs": -20.65,
+     "peak_db": -10.52
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-10/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.34,
+     "offset_ms": 0.0,
+     "lufs": -20.3,
+     "peak_db": -11.13
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-10/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.08,
+     "offset_ms": 0.0,
+     "lufs": -20.56,
+     "peak_db": -11.63
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-10/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 49.36,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-10/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.58,
+     "offset_ms": 0.0,
+     "lufs": -20.06,
+     "peak_db": -10.35
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-10/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 49.36,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-10/original-mic.mp3",
+     "gain_db": -0.55,
+     "offset_ms": 0.0,
+     "lufs": -20.09,
+     "peak_db": -11.02
+    }
+   }
+  },
+  {
+   "n": 11,
+   "name": "ceramic strat neck low blues riff",
+   "guitar": "Ceramic Strat",
+   "label": "Neck, low blues riff",
+   "duration": 6.946,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-11/18-watt.mp3",
+     "gain_db": 51.79,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-11/67-settings-022-10k-50p50.mp3",
+     "gain_db": 0.06,
+     "offset_ms": 2.24,
+     "lufs": -18.28,
+     "peak_db": -8.33
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-11/67-settings-022-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.24,
+     "lufs": -18.21,
+     "peak_db": -8.16
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-11/67-settings-022-pi.mp3",
+     "gain_db": 0.64,
+     "offset_ms": 2.24,
+     "lufs": -18.85,
+     "peak_db": -9.0
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-11/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.39,
+     "offset_ms": 2.24,
+     "lufs": -18.6,
+     "peak_db": -8.13
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-11/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.47,
+     "offset_ms": 2.24,
+     "lufs": -18.69,
+     "peak_db": -9.34
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-11/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.11,
+     "offset_ms": 2.24,
+     "lufs": -18.1,
+     "peak_db": -8.85
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-11/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.17,
+     "offset_ms": 2.24,
+     "lufs": -19.39,
+     "peak_db": -10.09
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-11/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": -0.48,
+     "offset_ms": 2.24,
+     "lufs": -17.73,
+     "peak_db": -8.7
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-11/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -1.96,
+     "offset_ms": 2.24,
+     "lufs": -16.25,
+     "peak_db": -7.45
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-11/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -1.6,
+     "offset_ms": 2.24,
+     "lufs": -16.61,
+     "peak_db": -7.93
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-11/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 51.79,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-11/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.8,
+     "offset_ms": 2.24,
+     "lufs": -17.41,
+     "peak_db": -8.74
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-11/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -1.53,
+     "offset_ms": 2.24,
+     "lufs": -16.69,
+     "peak_db": -7.62
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-11/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -1.24,
+     "offset_ms": 2.24,
+     "lufs": -16.98,
+     "peak_db": -7.74
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-11/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 51.79,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-11/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -1.51,
+     "offset_ms": 2.24,
+     "lufs": -16.7,
+     "peak_db": -8.07
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-11/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 51.79,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-11/original-mic.mp3",
+     "gain_db": -0.32,
+     "offset_ms": 0.0,
+     "lufs": -17.9,
+     "peak_db": -8.27
+    }
+   }
+  },
+  {
+   "n": 12,
+   "name": "ceramic strat bridge low blues riff",
+   "guitar": "Ceramic Strat",
+   "label": "Bridge, low blues riff",
+   "duration": 6.607,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-12/18-watt.mp3",
+     "gain_db": 50.16,
+     "offset_ms": 2.27,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-12/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.6,
+     "offset_ms": 2.27,
+     "lufs": -19.24,
+     "peak_db": -9.47
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-12/67-settings-022-50p50.mp3",
+     "gain_db": -0.73,
+     "offset_ms": 2.27,
+     "lufs": -19.11,
+     "peak_db": -9.41
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-12/67-settings-022-pi.mp3",
+     "gain_db": -0.09,
+     "offset_ms": 2.27,
+     "lufs": -19.74,
+     "peak_db": -9.58
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-12/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.28,
+     "offset_ms": 1.26,
+     "lufs": -19.55,
+     "peak_db": -9.71
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-12/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.27,
+     "lufs": -19.84,
+     "peak_db": -10.5
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-12/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.46,
+     "offset_ms": 2.27,
+     "lufs": -19.38,
+     "peak_db": -9.55
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-12/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.27,
+     "offset_ms": 2.27,
+     "lufs": -21.11,
+     "peak_db": -11.8
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-12/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 1.12,
+     "offset_ms": 2.27,
+     "lufs": -20.96,
+     "peak_db": -11.69
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-12/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.15,
+     "offset_ms": 2.27,
+     "lufs": -19.68,
+     "peak_db": -10.23
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-12/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -0.33,
+     "offset_ms": 2.27,
+     "lufs": -19.5,
+     "peak_db": -10.15
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-12/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 50.16,
+     "offset_ms": 2.27,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-12/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.68,
+     "offset_ms": 2.27,
+     "lufs": -20.52,
+     "peak_db": -11.32
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-12/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.15,
+     "offset_ms": 2.27,
+     "lufs": -19.99,
+     "peak_db": -10.8
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-12/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.53,
+     "offset_ms": 2.27,
+     "lufs": -20.36,
+     "peak_db": -11.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-12/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 50.16,
+     "offset_ms": 2.27,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-12/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.19,
+     "offset_ms": 2.27,
+     "lufs": -19.65,
+     "peak_db": -10.47
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-12/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 50.16,
+     "offset_ms": 2.27,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-12/original-mic.mp3",
+     "gain_db": -0.97,
+     "offset_ms": 0.0,
+     "lufs": -18.87,
+     "peak_db": -9.13
+    }
+   }
+  },
+  {
+   "n": 13,
+   "name": "ceramic strat neck shuffle",
+   "guitar": "Ceramic Strat",
+   "label": "Neck, shuffle",
+   "duration": 7.913,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-13/18-watt.mp3",
+     "gain_db": 52.12,
+     "offset_ms": 2.08,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-13/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.33,
+     "offset_ms": 2.08,
+     "lufs": -17.55,
+     "peak_db": -9.24
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-13/67-settings-022-50p50.mp3",
+     "gain_db": -0.46,
+     "offset_ms": 2.08,
+     "lufs": -17.42,
+     "peak_db": -9.07
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-13/67-settings-022-pi.mp3",
+     "gain_db": 0.12,
+     "offset_ms": 2.08,
+     "lufs": -18.0,
+     "peak_db": -9.94
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-13/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.08,
+     "lufs": -17.88,
+     "peak_db": -9.35
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-13/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.48,
+     "offset_ms": 2.08,
+     "lufs": -18.36,
+     "peak_db": -9.49
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-13/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.0,
+     "offset_ms": 2.08,
+     "lufs": -17.88,
+     "peak_db": -9.23
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-13/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 2.07,
+     "offset_ms": 2.08,
+     "lufs": -19.95,
+     "peak_db": -11.59
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-13/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.14,
+     "offset_ms": 2.08,
+     "lufs": -18.02,
+     "peak_db": -9.17
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-13/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.85,
+     "offset_ms": 2.08,
+     "lufs": -17.03,
+     "peak_db": -8.02
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-13/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.3,
+     "offset_ms": 2.08,
+     "lufs": -18.19,
+     "peak_db": -8.94
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-13/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 52.12,
+     "offset_ms": 2.08,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-13/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.6,
+     "offset_ms": 2.08,
+     "lufs": -17.28,
+     "peak_db": -8.72
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-13/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.76,
+     "offset_ms": 2.08,
+     "lufs": -17.12,
+     "peak_db": -8.13
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-13/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.55,
+     "offset_ms": 2.08,
+     "lufs": -17.33,
+     "peak_db": -8.25
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-13/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 52.12,
+     "offset_ms": 2.08,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-13/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -1.1,
+     "offset_ms": 2.08,
+     "lufs": -16.78,
+     "peak_db": -8.14
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-13/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 52.12,
+     "offset_ms": 2.08,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-13/original-mic.mp3",
+     "gain_db": -0.41,
+     "offset_ms": 0.0,
+     "lufs": -17.47,
+     "peak_db": -8.77
+    }
+   }
+  },
+  {
+   "n": 14,
+   "name": "ceramic strat bridge shuffle",
+   "guitar": "Ceramic Strat",
+   "label": "Bridge, shuffle",
+   "duration": 7.26,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-14/18-watt.mp3",
+     "gain_db": 50.15,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-14/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.32,
+     "offset_ms": 2.24,
+     "lufs": -19.53,
+     "peak_db": -10.43
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-14/67-settings-022-50p50.mp3",
+     "gain_db": -0.46,
+     "offset_ms": 2.24,
+     "lufs": -19.39,
+     "peak_db": -9.87
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-14/67-settings-022-pi.mp3",
+     "gain_db": 0.16,
+     "offset_ms": 2.24,
+     "lufs": -20.0,
+     "peak_db": -10.77
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-14/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.07,
+     "offset_ms": 2.24,
+     "lufs": -19.77,
+     "peak_db": -10.53
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-14/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.56,
+     "offset_ms": 2.24,
+     "lufs": -20.41,
+     "peak_db": -10.74
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-14/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.13,
+     "offset_ms": 2.24,
+     "lufs": -19.98,
+     "peak_db": -10.26
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-14/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 1.79,
+     "offset_ms": 2.24,
+     "lufs": -21.63,
+     "peak_db": -11.93
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-14/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.47,
+     "offset_ms": 2.24,
+     "lufs": -20.31,
+     "peak_db": -11.2
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-14/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.62,
+     "offset_ms": 2.24,
+     "lufs": -19.23,
+     "peak_db": -9.83
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-14/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": -0.49,
+     "offset_ms": 2.24,
+     "lufs": -19.35,
+     "peak_db": -10.38
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-14/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 50.15,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-14/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 2.24,
+     "lufs": -19.85,
+     "peak_db": -10.75
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-14/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.38,
+     "offset_ms": 2.24,
+     "lufs": -19.46,
+     "peak_db": -9.91
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-14/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.26,
+     "offset_ms": 2.24,
+     "lufs": -19.59,
+     "peak_db": -10.12
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-14/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 50.15,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-14/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.59,
+     "offset_ms": 2.24,
+     "lufs": -19.26,
+     "peak_db": -10.04
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-14/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 50.15,
+     "offset_ms": 2.24,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-14/original-mic.mp3",
+     "gain_db": -0.49,
+     "offset_ms": 0.0,
+     "lufs": -19.36,
+     "peak_db": -10.02
+    }
+   }
+  },
+  {
+   "n": 15,
+   "name": "ceramic strat neck single notes",
+   "guitar": "Ceramic Strat",
+   "label": "Neck, single notes",
+   "duration": 6.87,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-15/18-watt.mp3",
+     "gain_db": 52.85,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-15/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.47,
+     "offset_ms": 0.0,
+     "lufs": -16.68,
+     "peak_db": -8.4
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-15/67-settings-022-50p50.mp3",
+     "gain_db": -0.69,
+     "offset_ms": 0.0,
+     "lufs": -16.46,
+     "peak_db": -8.02
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-15/67-settings-022-pi.mp3",
+     "gain_db": -0.11,
+     "offset_ms": 0.0,
+     "lufs": -17.03,
+     "peak_db": -9.0
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-15/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.2,
+     "offset_ms": 0.0,
+     "lufs": -17.35,
+     "peak_db": -9.24
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-15/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.98,
+     "offset_ms": 0.0,
+     "lufs": -18.13,
+     "peak_db": -10.2
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-15/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.61,
+     "offset_ms": 0.0,
+     "lufs": -17.75,
+     "peak_db": -9.6
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-15/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 3.41,
+     "offset_ms": 0.0,
+     "lufs": -20.55,
+     "peak_db": -11.57
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-15/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": -1.61,
+     "offset_ms": 0.0,
+     "lufs": -15.54,
+     "peak_db": -8.25
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-15/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -2.68,
+     "offset_ms": 0.0,
+     "lufs": -14.47,
+     "peak_db": -6.9
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-15/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.73,
+     "offset_ms": 0.0,
+     "lufs": -17.87,
+     "peak_db": -8.83
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-15/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 52.85,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-15/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -1.97,
+     "offset_ms": 0.0,
+     "lufs": -15.18,
+     "peak_db": -8.38
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-15/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -2.51,
+     "offset_ms": 0.0,
+     "lufs": -14.64,
+     "peak_db": -7.08
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-15/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -2.26,
+     "offset_ms": 0.0,
+     "lufs": -14.88,
+     "peak_db": -7.3
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-15/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 52.85,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-15/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -2.16,
+     "offset_ms": 0.0,
+     "lufs": -14.98,
+     "peak_db": -7.76
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-15/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 52.85,
+     "offset_ms": 0.0,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-15/original-mic.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -17.15,
+     "peak_db": -9.22
+    }
+   }
+  },
+  {
+   "n": 16,
+   "name": "ceramic strat bridge single notes",
+   "guitar": "Ceramic Strat",
+   "label": "Bridge, single notes",
+   "duration": 6.991,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-16/18-watt.mp3",
+     "gain_db": 49.24,
+     "offset_ms": 9.58,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-16/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.48,
+     "offset_ms": 9.58,
+     "lufs": -20.28,
+     "peak_db": -9.99
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-16/67-settings-022-50p50.mp3",
+     "gain_db": -0.65,
+     "offset_ms": 9.58,
+     "lufs": -20.11,
+     "peak_db": -10.04
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-16/67-settings-022-pi.mp3",
+     "gain_db": -0.06,
+     "offset_ms": 9.58,
+     "lufs": -20.7,
+     "peak_db": -10.69
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-16/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.35,
+     "offset_ms": 9.58,
+     "lufs": -21.11,
+     "peak_db": -10.82
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-16/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.84,
+     "offset_ms": 9.58,
+     "lufs": -21.6,
+     "peak_db": -11.18
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-16/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.8,
+     "offset_ms": 9.58,
+     "lufs": -21.56,
+     "peak_db": -11.17
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-16/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 3.2,
+     "offset_ms": 9.58,
+     "lufs": -23.96,
+     "peak_db": -13.79
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-16/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": -0.69,
+     "offset_ms": 9.58,
+     "lufs": -20.07,
+     "peak_db": -11.49
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-16/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -1.36,
+     "offset_ms": 9.58,
+     "lufs": -19.4,
+     "peak_db": -10.38
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-16/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 0.21,
+     "offset_ms": 9.58,
+     "lufs": -20.97,
+     "peak_db": -10.75
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-16/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 49.24,
+     "offset_ms": 9.58,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-16/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -1.27,
+     "offset_ms": 0.0,
+     "lufs": -19.49,
+     "peak_db": -10.94
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-16/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -1.54,
+     "offset_ms": 9.58,
+     "lufs": -19.22,
+     "peak_db": -10.2
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-16/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -1.32,
+     "offset_ms": 9.58,
+     "lufs": -19.44,
+     "peak_db": -10.82
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-16/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 49.24,
+     "offset_ms": 9.58,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-16/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -1.2,
+     "offset_ms": 9.58,
+     "lufs": -19.56,
+     "peak_db": -10.3
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-16/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 49.24,
+     "offset_ms": 9.58,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-16/original-mic.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 7.82,
+     "lufs": -20.76,
+     "peak_db": -10.4
+    }
+   }
+  },
+  {
+   "n": 17,
+   "name": "les paul PAF neck chordal textures",
+   "guitar": "Les Paul PAF",
+   "label": "Neck, chordal textures",
+   "duration": 8.245,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-17/18-watt.mp3",
+     "gain_db": 51.04,
+     "offset_ms": 10.06,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-17/67-settings-022-10k-50p50.mp3",
+     "gain_db": -1.97,
+     "offset_ms": 10.06,
+     "lufs": -16.98,
+     "peak_db": -7.62
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-17/67-settings-022-50p50.mp3",
+     "gain_db": -1.92,
+     "offset_ms": 10.06,
+     "lufs": -17.04,
+     "peak_db": -7.64
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-17/67-settings-022-pi.mp3",
+     "gain_db": -1.51,
+     "offset_ms": 10.06,
+     "lufs": -17.44,
+     "peak_db": -8.36
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-17/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -1.89,
+     "offset_ms": 10.06,
+     "lufs": -17.07,
+     "peak_db": -8.26
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-17/67-settings-no-attenutaor.mp3",
+     "gain_db": -1.61,
+     "offset_ms": 10.06,
+     "lufs": -17.34,
+     "peak_db": -8.98
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-17/67-settings-yes-attenuator.mp3",
+     "gain_db": -1.76,
+     "offset_ms": 10.06,
+     "lufs": -17.19,
+     "peak_db": -8.23
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-17/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 0.23,
+     "offset_ms": 10.06,
+     "lufs": -19.19,
+     "peak_db": -10.54
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-17/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 1.09,
+     "offset_ms": 10.06,
+     "lufs": -20.05,
+     "peak_db": -10.06
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-17/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.15,
+     "offset_ms": 10.06,
+     "lufs": -18.8,
+     "peak_db": -9.03
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-17/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 51.04,
+     "offset_ms": 10.06,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-17/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 51.04,
+     "offset_ms": 10.06,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-17/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 0.0,
+     "lufs": -18.96,
+     "peak_db": -9.83
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-17/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.43,
+     "offset_ms": 10.06,
+     "lufs": -19.39,
+     "peak_db": -9.04
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-17/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.6,
+     "offset_ms": 10.06,
+     "lufs": -19.56,
+     "peak_db": -8.98
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-17/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 51.04,
+     "offset_ms": 10.06,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-17/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.78,
+     "offset_ms": 10.06,
+     "lufs": -18.18,
+     "peak_db": -9.27
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-17/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 51.04,
+     "offset_ms": 10.06,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-17/original-mic.mp3",
+     "gain_db": -2.32,
+     "offset_ms": 8.29,
+     "lufs": -16.64,
+     "peak_db": -7.93
+    }
+   }
+  },
+  {
+   "n": 18,
+   "name": "les paul PAF bridge chordal textures",
+   "guitar": "Les Paul PAF",
+   "label": "Bridge, chordal textures",
+   "duration": 8.662,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-18/18-watt.mp3",
+     "gain_db": 49.91,
+     "offset_ms": 10.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-18/67-settings-022-10k-50p50.mp3",
+     "gain_db": -1.28,
+     "offset_ms": 10.59,
+     "lufs": -18.81,
+     "peak_db": -9.91
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-18/67-settings-022-50p50.mp3",
+     "gain_db": -1.25,
+     "offset_ms": 10.59,
+     "lufs": -18.85,
+     "peak_db": -9.64
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-18/67-settings-022-pi.mp3",
+     "gain_db": -0.84,
+     "offset_ms": 10.59,
+     "lufs": -19.25,
+     "peak_db": -10.53
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-18/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -1.22,
+     "offset_ms": 10.59,
+     "lufs": -18.88,
+     "peak_db": -9.56
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-18/67-settings-no-attenutaor.mp3",
+     "gain_db": -0.8,
+     "offset_ms": 10.59,
+     "lufs": -19.3,
+     "peak_db": -10.12
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-18/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.98,
+     "offset_ms": 10.59,
+     "lufs": -19.11,
+     "peak_db": -9.48
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-18/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 49.91,
+     "offset_ms": 10.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-18/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.67,
+     "offset_ms": 10.59,
+     "lufs": -20.76,
+     "peak_db": -10.55
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-18/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.68,
+     "offset_ms": 10.59,
+     "lufs": -19.41,
+     "peak_db": -9.27
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-18/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 49.91,
+     "offset_ms": 10.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-18/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 49.91,
+     "offset_ms": 10.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-18/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.22,
+     "offset_ms": 0.0,
+     "lufs": -20.31,
+     "peak_db": -10.12
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-18/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 10.59,
+     "lufs": -20.09,
+     "peak_db": -9.73
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-18/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.07,
+     "offset_ms": 10.59,
+     "lufs": -20.17,
+     "peak_db": -10.22
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-18/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 49.91,
+     "offset_ms": 10.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-18/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.48,
+     "offset_ms": 10.59,
+     "lufs": -19.61,
+     "peak_db": -9.85
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-18/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 49.91,
+     "offset_ms": 10.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-18/original-mic.mp3",
+     "gain_db": -1.65,
+     "offset_ms": 8.82,
+     "lufs": -18.44,
+     "peak_db": -8.85
+    }
+   }
+  },
+  {
+   "n": 19,
+   "name": "les paul PAF neck low blues riff",
+   "guitar": "Les Paul PAF",
+   "label": "Neck, low blues riff",
+   "duration": 7.408,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-19/18-watt.mp3",
+     "gain_db": 51.71,
+     "offset_ms": 9.18,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-19/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.86,
+     "offset_ms": 9.18,
+     "lufs": -17.43,
+     "peak_db": -8.5
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-19/67-settings-022-50p50.mp3",
+     "gain_db": -1.03,
+     "offset_ms": 9.18,
+     "lufs": -17.26,
+     "peak_db": -8.44
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-19/67-settings-022-pi.mp3",
+     "gain_db": -0.39,
+     "offset_ms": 9.18,
+     "lufs": -17.9,
+     "peak_db": -8.97
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-19/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.7,
+     "offset_ms": 9.18,
+     "lufs": -17.59,
+     "peak_db": -8.36
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-19/67-settings-no-attenutaor.mp3",
+     "gain_db": -0.5,
+     "offset_ms": 9.18,
+     "lufs": -17.79,
+     "peak_db": -8.73
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-19/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.85,
+     "offset_ms": 9.18,
+     "lufs": -17.44,
+     "peak_db": -8.05
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-19/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 51.71,
+     "offset_ms": 9.18,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-19/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.86,
+     "offset_ms": 10.67,
+     "lufs": -19.15,
+     "peak_db": -8.91
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-19/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.38,
+     "offset_ms": 10.68,
+     "lufs": -17.91,
+     "peak_db": -7.89
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-19/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 51.71,
+     "offset_ms": 9.18,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-19/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 51.71,
+     "offset_ms": 9.18,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-19/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.22,
+     "offset_ms": 0.0,
+     "lufs": -18.51,
+     "peak_db": -8.82
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-19/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 10.59,
+     "lufs": -18.29,
+     "peak_db": -7.81
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-19/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.01,
+     "offset_ms": 10.82,
+     "lufs": -18.3,
+     "peak_db": -7.74
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-19/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 51.71,
+     "offset_ms": 9.18,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-19/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.5,
+     "offset_ms": 9.18,
+     "lufs": -17.79,
+     "peak_db": -8.14
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-19/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 51.71,
+     "offset_ms": 9.18,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-19/original-mic.mp3",
+     "gain_db": -1.27,
+     "offset_ms": 7.33,
+     "lufs": -17.02,
+     "peak_db": -7.98
+    }
+   }
+  },
+  {
+   "n": 20,
+   "name": "les paul PAF bridge low blues riff",
+   "guitar": "Les Paul PAF",
+   "label": "Bridge, low blues riff",
+   "duration": 7.251,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-20/18-watt.mp3",
+     "gain_db": 50.27,
+     "offset_ms": 9.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-20/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.38,
+     "offset_ms": 9.59,
+     "lufs": -19.35,
+     "peak_db": -8.8
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-20/67-settings-022-50p50.mp3",
+     "gain_db": -0.51,
+     "offset_ms": 9.59,
+     "lufs": -19.22,
+     "peak_db": -8.59
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-20/67-settings-022-pi.mp3",
+     "gain_db": 0.13,
+     "offset_ms": 9.59,
+     "lufs": -19.86,
+     "peak_db": -9.27
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-20/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.15,
+     "offset_ms": 9.59,
+     "lufs": -19.58,
+     "peak_db": -9.13
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-20/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 9.59,
+     "lufs": -19.73,
+     "peak_db": -9.74
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-20/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.38,
+     "offset_ms": 9.59,
+     "lufs": -19.35,
+     "peak_db": -9.33
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-20/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 50.27,
+     "offset_ms": 9.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-20/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.78,
+     "offset_ms": 10.75,
+     "lufs": -20.51,
+     "peak_db": -10.43
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-20/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.52,
+     "offset_ms": 10.75,
+     "lufs": -19.22,
+     "peak_db": -8.76
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-20/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 50.27,
+     "offset_ms": 9.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-20/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 50.27,
+     "offset_ms": 9.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-20/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.47,
+     "offset_ms": 0.0,
+     "lufs": -20.2,
+     "peak_db": -10.31
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-20/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.0,
+     "offset_ms": 10.75,
+     "lufs": -19.73,
+     "peak_db": -9.43
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-20/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.03,
+     "offset_ms": 10.92,
+     "lufs": -19.7,
+     "peak_db": -9.76
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-20/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 50.27,
+     "offset_ms": 9.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-20/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.29,
+     "offset_ms": 9.59,
+     "lufs": -19.44,
+     "peak_db": -8.97
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-20/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 50.27,
+     "offset_ms": 9.59,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-20/original-mic.mp3",
+     "gain_db": -0.86,
+     "offset_ms": 7.74,
+     "lufs": -18.87,
+     "peak_db": -8.59
+    }
+   }
+  },
+  {
+   "n": 21,
+   "name": "les paul PAF neck shuffle",
+   "guitar": "Les Paul PAF",
+   "label": "Neck, shuffle",
+   "duration": 7.775,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-21/18-watt.mp3",
+     "gain_db": 52.0,
+     "offset_ms": 9.87,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-21/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.94,
+     "offset_ms": 9.87,
+     "lufs": -17.06,
+     "peak_db": -8.09
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-21/67-settings-022-50p50.mp3",
+     "gain_db": -1.06,
+     "offset_ms": 9.87,
+     "lufs": -16.95,
+     "peak_db": -7.81
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-21/67-settings-022-pi.mp3",
+     "gain_db": -0.4,
+     "offset_ms": 9.87,
+     "lufs": -17.6,
+     "peak_db": -8.56
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-21/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.84,
+     "offset_ms": 9.87,
+     "lufs": -17.16,
+     "peak_db": -8.61
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-21/67-settings-no-attenutaor.mp3",
+     "gain_db": -0.51,
+     "offset_ms": 9.87,
+     "lufs": -17.49,
+     "peak_db": -8.44
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-21/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.89,
+     "offset_ms": 9.87,
+     "lufs": -17.11,
+     "peak_db": -8.07
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-21/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 52.0,
+     "offset_ms": 9.87,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-21/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.76,
+     "offset_ms": 9.87,
+     "lufs": -18.76,
+     "peak_db": -8.9
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-21/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.44,
+     "offset_ms": 9.87,
+     "lufs": -17.56,
+     "peak_db": -7.67
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-21/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 52.0,
+     "offset_ms": 9.87,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-21/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 52.0,
+     "offset_ms": 9.87,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-21/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.28,
+     "offset_ms": 0.0,
+     "lufs": -18.28,
+     "peak_db": -8.75
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-21/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.07,
+     "offset_ms": 9.87,
+     "lufs": -18.07,
+     "peak_db": -8.17
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-21/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 9.87,
+     "lufs": -18.0,
+     "peak_db": -8.01
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-21/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 52.0,
+     "offset_ms": 9.87,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-21/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.52,
+     "offset_ms": 9.87,
+     "lufs": -17.48,
+     "peak_db": -8.1
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-21/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 52.0,
+     "offset_ms": 9.87,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-21/original-mic.mp3",
+     "gain_db": -1.37,
+     "offset_ms": 7.87,
+     "lufs": -16.63,
+     "peak_db": -7.76
+    }
+   }
+  },
+  {
+   "n": 22,
+   "name": "les paul PAF bridge shuffle",
+   "guitar": "Les Paul PAF",
+   "label": "Bridge, shuffle",
+   "duration": 7.666,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-22/18-watt.mp3",
+     "gain_db": 50.71,
+     "offset_ms": 10.22,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-22/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.77,
+     "offset_ms": 10.22,
+     "lufs": -18.53,
+     "peak_db": -9.67
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-22/67-settings-022-50p50.mp3",
+     "gain_db": -0.88,
+     "offset_ms": 10.22,
+     "lufs": -18.41,
+     "peak_db": -9.29
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-22/67-settings-022-pi.mp3",
+     "gain_db": -0.17,
+     "offset_ms": 10.22,
+     "lufs": -19.12,
+     "peak_db": -10.12
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-22/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.47,
+     "offset_ms": 10.22,
+     "lufs": -18.82,
+     "peak_db": -9.09
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-22/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.05,
+     "offset_ms": 10.22,
+     "lufs": -19.34,
+     "peak_db": -9.16
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-22/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.37,
+     "offset_ms": 10.22,
+     "lufs": -18.93,
+     "peak_db": -9.47
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-22/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 50.71,
+     "offset_ms": 10.22,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-22/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.68,
+     "offset_ms": 11.49,
+     "lufs": -19.97,
+     "peak_db": -11.24
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-22/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.45,
+     "offset_ms": 12.21,
+     "lufs": -18.85,
+     "peak_db": -9.94
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-22/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 50.71,
+     "offset_ms": 10.22,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-22/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 50.71,
+     "offset_ms": 10.22,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-22/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": 0.57,
+     "offset_ms": 0.0,
+     "lufs": -19.86,
+     "peak_db": -10.42
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-22/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.02,
+     "offset_ms": 11.5,
+     "lufs": -19.27,
+     "peak_db": -10.18
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-22/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.12,
+     "offset_ms": 13.98,
+     "lufs": -19.18,
+     "peak_db": -10.31
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-22/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 50.71,
+     "offset_ms": 10.22,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-22/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 10.22,
+     "lufs": -19.29,
+     "peak_db": -9.6
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-22/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 50.71,
+     "offset_ms": 10.22,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-22/original-mic.mp3",
+     "gain_db": -0.93,
+     "offset_ms": 8.38,
+     "lufs": -18.36,
+     "peak_db": -9.18
+    }
+   }
+  },
+  {
+   "n": 23,
+   "name": "les paul PAF neck single notes",
+   "guitar": "Les Paul PAF",
+   "label": "Neck, single notes",
+   "duration": 7.748,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-23/18-watt.mp3",
+     "gain_db": 54.1,
+     "offset_ms": 10.28,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-23/67-settings-022-10k-50p50.mp3",
+     "gain_db": -0.46,
+     "offset_ms": 10.28,
+     "lufs": -15.43,
+     "peak_db": -7.34
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-23/67-settings-022-50p50.mp3",
+     "gain_db": -0.61,
+     "offset_ms": 10.28,
+     "lufs": -15.29,
+     "peak_db": -7.11
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-23/67-settings-022-pi.mp3",
+     "gain_db": -0.1,
+     "offset_ms": 10.28,
+     "lufs": -15.79,
+     "peak_db": -7.99
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-23/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": 0.14,
+     "offset_ms": 10.28,
+     "lufs": -16.04,
+     "peak_db": -7.67
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-23/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.63,
+     "offset_ms": 10.28,
+     "lufs": -16.53,
+     "peak_db": -8.53
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-23/67-settings-yes-attenuator.mp3",
+     "gain_db": 0.5,
+     "offset_ms": 10.28,
+     "lufs": -16.39,
+     "peak_db": -7.7
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-23/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 54.1,
+     "offset_ms": 10.28,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-23/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": -0.03,
+     "offset_ms": 10.28,
+     "lufs": -15.87,
+     "peak_db": -8.84
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-23/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -1.1,
+     "offset_ms": 10.28,
+     "lufs": -14.8,
+     "peak_db": -7.59
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-23/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 54.1,
+     "offset_ms": 10.28,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-23/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 54.1,
+     "offset_ms": 10.28,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-23/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.64,
+     "offset_ms": 0.0,
+     "lufs": -15.25,
+     "peak_db": -7.91
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-23/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": -0.73,
+     "offset_ms": 10.28,
+     "lufs": -15.17,
+     "peak_db": -7.78
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-23/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": -0.7,
+     "offset_ms": 10.28,
+     "lufs": -15.19,
+     "peak_db": -8.05
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-23/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 54.1,
+     "offset_ms": 10.28,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-23/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -1.18,
+     "offset_ms": 10.28,
+     "lufs": -14.72,
+     "peak_db": -7.08
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-23/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 54.1,
+     "offset_ms": 10.28,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-23/original-mic.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 8.75,
+     "lufs": -15.9,
+     "peak_db": -7.46
+    }
+   }
+  },
+  {
+   "n": 24,
+   "name": "les paul PAF bridge single notes",
+   "guitar": "Les Paul PAF",
+   "label": "Bridge, single notes",
+   "duration": 8.113,
+   "files": {
+    "18-watt": {
+     "url": "audio/riff-24/18-watt.mp3",
+     "gain_db": 50.35,
+     "offset_ms": 10.73,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "67-settings-022-10k-50p50": {
+     "url": "audio/riff-24/67-settings-022-10k-50p50.mp3",
+     "gain_db": -1.2,
+     "offset_ms": 10.73,
+     "lufs": -18.45,
+     "peak_db": -8.48
+    },
+    "67-settings-022-50p50": {
+     "url": "audio/riff-24/67-settings-022-50p50.mp3",
+     "gain_db": -1.28,
+     "offset_ms": 10.73,
+     "lufs": -18.37,
+     "peak_db": -8.43
+    },
+    "67-settings-022-pi": {
+     "url": "audio/riff-24/67-settings-022-pi.mp3",
+     "gain_db": -0.82,
+     "offset_ms": 10.73,
+     "lufs": -18.84,
+     "peak_db": -9.33
+    },
+    "67-settings-lower-bias-022-10k-50p50": {
+     "url": "audio/riff-24/67-settings-lower-bias-022-10k-50p50.mp3",
+     "gain_db": -0.39,
+     "offset_ms": 10.73,
+     "lufs": -19.26,
+     "peak_db": -9.55
+    },
+    "67-settings-no-attenutaor": {
+     "url": "audio/riff-24/67-settings-no-attenutaor.mp3",
+     "gain_db": 0.0,
+     "offset_ms": 10.73,
+     "lufs": -19.65,
+     "peak_db": -9.69
+    },
+    "67-settings-yes-attenuator": {
+     "url": "audio/riff-24/67-settings-yes-attenuator.mp3",
+     "gain_db": -0.14,
+     "offset_ms": 10.73,
+     "lufs": -19.51,
+     "peak_db": -9.09
+    },
+    "73-settings-volume-at-5-100pf-bright-cap": {
+     "url": "audio/riff-24/73-settings-volume-at-5-100pf-bright-cap.mp3",
+     "gain_db": 50.35,
+     "offset_ms": 10.73,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-settings-volume-at-8-4700-bright-cap-022-pi": {
+     "url": "audio/riff-24/73-settings-volume-at-8-4700-bright-cap-022-pi.mp3",
+     "gain_db": 0.89,
+     "offset_ms": 10.73,
+     "lufs": -20.54,
+     "peak_db": -10.37
+    },
+    "73-settings-volume-at-8-with-4700-bright-cap": {
+     "url": "audio/riff-24/73-settings-volume-at-8-with-4700-bright-cap.mp3",
+     "gain_db": -0.2,
+     "offset_ms": 10.73,
+     "lufs": -19.46,
+     "peak_db": -9.18
+    },
+    "73-volume-at-5-4700-bright-cap": {
+     "url": "audio/riff-24/73-volume-at-5-4700-bright-cap.mp3",
+     "gain_db": 50.35,
+     "offset_ms": 10.73,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap": {
+     "url": "audio/riff-24/73-volume-at-8-100pf-bright-cap.mp3",
+     "gain_db": 50.35,
+     "offset_ms": 10.73,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-100pf-bright-cap-022-pi": {
+     "url": "audio/riff-24/73-volume-at-8-100pf-bright-cap-022-pi.mp3",
+     "gain_db": -0.09,
+     "offset_ms": 0.0,
+     "lufs": -19.56,
+     "peak_db": -9.54
+    },
+    "73-volume-at-8-4700-bright-022-50p50": {
+     "url": "audio/riff-24/73-volume-at-8-4700-bright-022-50p50.mp3",
+     "gain_db": 0.14,
+     "offset_ms": 10.73,
+     "lufs": -19.8,
+     "peak_db": -9.57
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
+     "url": "audio/riff-24/73-volume-at-8-4700-bright-cap-10k-022-50p50.mp3",
+     "gain_db": 0.26,
+     "offset_ms": 10.73,
+     "lufs": -19.91,
+     "peak_db": -9.74
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
+     "url": "audio/riff-24/73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels.mp3",
+     "gain_db": 50.35,
+     "offset_ms": 10.73,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
+     "url": "audio/riff-24/73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias.mp3",
+     "gain_db": -0.57,
+     "offset_ms": 10.73,
+     "lufs": -19.08,
+     "peak_db": -8.51
+    },
+    "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
+     "url": "audio/riff-24/73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel.mp3",
+     "gain_db": 50.35,
+     "offset_ms": 10.73,
+     "lufs": -70.0,
+     "peak_db": -180.0
+    },
+    "original-mic": {
+     "url": "audio/riff-24/original-mic.mp3",
+     "gain_db": -0.7,
+     "offset_ms": 8.87,
+     "lufs": -18.96,
+     "peak_db": -9.04
+    }
+   }
+  }
+ ]
+}

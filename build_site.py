@@ -2,7 +2,7 @@
 """
 build_site.py  Turn a folder of amp-setting renders into a static A/B listening site.
 
-    python build_site.py SOURCE_DIR OUT_DIR [--serve] [--format auto|copy|flac]
+    python build_site.py SOURCE_DIR [OUT_DIR=docs] [--serve] [--format auto|copy|flac]
                          [--no-align] [--jobs N]
 
 Expects files named like
@@ -21,6 +21,7 @@ What it does
 Needs: Python 3.9+, numpy, scipy, and ffmpeg on PATH.
 """
 import argparse
+import csv
 import functools
 import http.server
 import json
@@ -261,6 +262,69 @@ def align_riff(files):
     return [l - lo for l in lags], max(abs(l) for l in lags), notes
 
 
+# ---------------------------------------------------------------- feature matrix
+
+# (key, short column heading, full wording). For either/or items a check means the FIRST option listed.
+FEATURES = [
+    ("original", "Original recording", "Original recording"),
+    ("attenuation", "Attenuation", "Attenuation"),
+    ("volume8", "Volume 8 (not 5)", "Volume at 8 (not volume at 5)"),
+    ("bright100", "100pf bright (not 4700pf)", "100pf bright cap (not 4700pf)"),
+    ("splitcath", "Split cathode (not shared)", "Split cathode (not shared cathode)"),
+    ("v1b022", "0.022uf V1B (not 0.0022uf)", "0.022uf V1B coupling cap (not 0.0022uf)"),
+    ("leadstack", "Lead tone stack", "Lead tone stack"),
+    ("nfb67", "67-spec NFB (not 72)", "67-spec (high) NFB (not 72-spec low NFB)"),
+    ("postpi01", "0.1uf post-PI (not 0.022uf)", "0.1uf post phase inverter couplers (not 0.022uf)"),
+    ("filter48", "Filtering 48+32+32+32+32", "48+32+32+32+32uf filtering (not 100+50+50+32+32uf)"),
+    ("dropres8k2", "2x8k2 B+ droppers (not 2x10k)", "2 x 8k2 B+ dropping resistors (not 2 x 10k)"),
+    ("highbias", "High bias (not low)", "High bias (not low bias)"),
+    ("watt18", "18 watt amp", "18 watt (separate amp)"),
+    ("normal", "Normal channel", "Normal channel"),
+    ("brightch", "Bright channel", "Bright channel"),
+    ("jumpered", "Jumpered channels", "Jumpered channels"),
+]
+YES = {"1", "y", "yes", "true", "t", "check", "✓"}
+NO = {"0", "n", "no", "false", "f", "x", "✗"}
+
+
+def parse_cell(v):
+    v = (v or "").strip().lower()
+    return 1 if v in YES else 0 if v in NO else None
+
+
+def infer_features(s):
+    """Fill in only what the file name itself states. Everything else stays blank for the owner."""
+    f = {k: None for k, _, _ in FEATURES}
+    fam = s["_fam"]
+    f["original"] = 1 if s["group"] == "Original mic" else 0
+    f["watt18"] = 1 if s["group"] == "18 watt" else 0
+    if s["group"] == "Original mic":
+        f["attenuation"] = 1                       # stated by the owner: 67 settings, yes attenuator
+    if "att" in fam:
+        f["attenuation"] = 1 if fam["att"] == "yes" else 0
+    if "volume" in fam:
+        f["volume8"] = {"8": 1, "5": 0}.get(fam["volume"])
+    if "bright" in fam:
+        f["bright100"] = 1 if fam["bright"].startswith("100") else 0 if fam["bright"].startswith("4700") else None
+    if "bias" in fam:
+        f["highbias"] = 0                          # "lower bias" in the name
+    if "chan" in fam:
+        f["jumpered" if "jumpered" in fam["chan"] else "normal"] = 1
+    return f
+
+
+APPENDIX_TEMPLATE = """## Settings common to every recording {#ap-common}
+
+- Microphone: large diaphragm condenser, 6 ft from the cabinet
+- Speakers: 4x12
+<!-- Add your tone control settings and anything else that never changed, one bullet per line. -->
+
+## What each setting means
+
+""" + "\n".join(f"### {lg} {{#ap-{k}}}\n<!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->\n"
+               for k, _, lg in FEATURES)
+
+
 # ---------------------------------------------------------------- build
 
 def find_ffmpeg():
@@ -305,7 +369,7 @@ def place(src, dst, fmt):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("source")
-    ap.add_argument("out")
+    ap.add_argument("out", nargs="?", default="docs", help="output folder (default: docs)")
     ap.add_argument("--format", choices=["auto", "copy", "flac"], default="auto",
                     help="auto: keep mp3/flac as they are, convert wav/aiff to flac")
     ap.add_argument("--no-align", action="store_true", help="skip the alignment check")
@@ -348,6 +412,54 @@ def main():
     cfg.setdefault("featured", [])
     for s in settings:
         cfg["settings"].setdefault(s["id"], {"label": s["label"], "detail": s["detail"], "source_name": s["raw"]})
+
+    # feature matrix (editable in features.csv)
+    feat_path = out / "features.csv"
+    existing = {}
+    if feat_path.exists():
+        with open(feat_path, newline="", encoding="utf-8-sig") as fh:
+            rd = csv.DictReader(fh)
+            have_cols = set(rd.fieldnames or [])
+            for row in rd:
+                existing[(row.get("id") or "").strip()] = row
+    else:
+        have_cols = set()
+    feat_vals, changed = {}, (not feat_path.exists()) or bool({k for k, _, _ in FEATURES} - have_cols)
+    for s_ in settings:
+        row = existing.get(s_["id"])
+        if row is None:
+            feat_vals[s_["id"]] = infer_features(s_)
+            changed = True
+        else:
+            feat_vals[s_["id"]] = {k: parse_cell(row.get(k)) for k, _, _ in FEATURES}
+    if changed:
+        with open(feat_path, "w", newline="", encoding="utf-8") as fh:
+            w = csv.writer(fh)
+            w.writerow(["id", "setting"] + [k for k, _, _ in FEATURES])
+            for s_ in settings:
+                w.writerow([s_["id"], s_["raw"]] + ["" if feat_vals[s_["id"]][k] is None else feat_vals[s_["id"]][k]
+                                                   for k, _, _ in FEATURES])
+    blanks = sum(v is None for d in feat_vals.values() for v in d.values())
+    print(f"features.csv: {blanks} of {len(settings) * len(FEATURES)} cells are blank. Fill them in at {feat_path}")
+    ap_path = out / "appendix.md"
+    if not ap_path.exists():
+        ap_path.write_text(APPENDIX_TEMPLATE, encoding="utf-8")
+    else:
+        text = ap_path.read_text(encoding="utf-8")
+        keys = [k for k, _, _ in FEATURES]
+        for i, (k, _, lg) in enumerate(FEATURES):
+            if f"{{#ap-{k}}}" in text:
+                continue
+            block = f"### {lg} {{#ap-{k}}}\n<!-- Write about this setting here. -->\n\n"
+            at = -1
+            for kk in keys[i + 1:]:
+                m_ = re.search(rf"^###[^\n]*\{{#ap-{kk}\}}", text, re.M)
+                if m_:
+                    at = m_.start()
+                    break
+            text = text[:at] + block + text[at:] if at >= 0 else text.rstrip("\n") + "\n\n" + block
+            print(f"appendix.md: added a section for {lg}")
+        ap_path.write_text(text, encoding="utf-8")
 
     # analysis
     jobs = [(n, raw, p) for n, r in sorted(riffs.items()) for raw, p in r["files"].items()]
@@ -404,7 +516,9 @@ def main():
         "settings": [{"id": s["id"], "group": s["group"],
                       "label": cfg["settings"][s["id"]].get("label", s["label"]),
                       "detail": cfg["settings"][s["id"]].get("detail", s["detail"]),
-                      "note": cfg["settings"][s["id"]].get("note", "")} for s in settings],
+                      "note": cfg["settings"][s["id"]].get("note", ""),
+                      "features": feat_vals[s["id"]]} for s in settings],
+        "features": [{"key": k, "short": sh, "long": lg} for k, sh, lg in FEATURES],
         "pairs": cfg["featured"] if cfg["featured"] else pairs,
         "riffs": [dict(r, label=cfg["riffs"][str(r["n"])].get("title", r["label"]),
                        guitar=cfg["riffs"][str(r["n"])].get("guitar", r["guitar"])) for r in manifest_riffs],

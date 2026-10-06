@@ -1,139 +1,563 @@
 {
  "title": "Plexi settings, back to back",
- "intro": "Clips re-amped through every setup. Flip between them while it plays to hear what actually changes.",
+ "intro": "One performance, re-amped through every setup. Flip between them while it plays and hear what actually changes.",
  "settings": [
   {
    "id": "original-mic",
    "group": "Original mic",
    "label": "Original mic",
    "detail": "Mic'd amp from the original DI take (67 settings, yes attenuator), not re-amped",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 1,
+    "attenuation": 1,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
+  },
+  {
+   "id": "18-watt",
+   "group": "18 watt",
+   "label": "18 watt",
+   "detail": "",
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 1,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "67-settings-022-pi",
    "group": "67 settings",
    "label": "67: 022 pi",
    "detail": "022 pi",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "67-settings-no-attenutaor",
    "group": "67 settings",
    "label": "67: no attenuator",
    "detail": "no attenuator",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": 0,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "67-settings-yes-attenuator",
    "group": "67 settings",
    "label": "67: yes attenuator",
    "detail": "yes attenuator",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": 1,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "67-settings-022-50p50",
    "group": "67 settings",
    "label": "67: 022, 50+50",
    "detail": "022, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "67-settings-022-10k-50p50",
    "group": "67 settings",
    "label": "67: 022, 10k, 50+50",
    "detail": "022, 10k, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "67-settings-lower-bias-022-10k-50p50",
    "group": "67 settings",
    "label": "67: lower bias, 022, 10k, 50+50",
    "detail": "lower bias, 022, 10k, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": null,
+    "bright100": null,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": 0,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-settings-volume-at-5-100pf-bright-cap",
    "group": "73 settings",
    "label": "73: volume at 5, 100pf bright cap",
    "detail": "volume at 5, 100pf bright cap",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 0,
+    "bright100": 1,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-5-4700-bright-cap",
    "group": "73 settings",
    "label": "73: volume at 5, 4700 bright cap",
    "detail": "volume at 5, 4700 bright cap",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 0,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-8-100pf-bright-cap",
    "group": "73 settings",
    "label": "73: volume at 8, 100pf bright cap",
    "detail": "volume at 8, 100pf bright cap",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 1,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-settings-volume-at-8-with-4700-bright-cap",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap",
    "detail": "volume at 8, 4700 bright cap",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-8-100pf-bright-cap-022-pi",
    "group": "73 settings",
    "label": "73: volume at 8, 100pf bright cap, 022 pi",
    "detail": "volume at 8, 100pf bright cap, 022 pi",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 1,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-settings-volume-at-8-4700-bright-cap-022-pi",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, 022 pi",
    "detail": "volume at 8, 4700 bright cap, 022 pi",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-8-4700-bright-022-50p50",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, 022, 50+50",
    "detail": "volume at 8, 4700 bright cap, 022, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, 022, 10k, 50+50",
    "detail": "volume at 8, 4700 bright cap, 022, 10k, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
    "detail": "volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": 1
+   }
   },
   {
    "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
    "detail": "volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": 0,
+    "watt18": 0,
+    "normal": null,
+    "brightch": null,
+    "jumpered": null
+   }
   },
   {
    "id": "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel",
    "group": "73 settings",
    "label": "73: volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
    "detail": "volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
-   "note": ""
+   "note": "",
+   "features": {
+    "original": 0,
+    "attenuation": null,
+    "volume8": 1,
+    "bright100": 0,
+    "splitcath": null,
+    "v1b022": null,
+    "leadstack": null,
+    "nfb67": null,
+    "postpi01": null,
+    "filter48": null,
+    "dropres8k2": null,
+    "highbias": null,
+    "watt18": 0,
+    "normal": 1,
+    "brightch": null,
+    "jumpered": null
+   }
+  }
+ ],
+ "features": [
+  {
+   "key": "original",
+   "short": "Original recording",
+   "long": "Original recording"
   },
   {
-   "id": "18-watt",
-   "group": "18 watt",
-   "label": "18 watt",
-   "detail": "Provided as a control group, this is the only set of clips from a separate amp entirely, a 1974x 18 watt. Played with the tone control at 10 and volume at 8 on the vibrato channel, but through the same 12x4 greenback cab.",
-   "note": ""
+   "key": "attenuation",
+   "short": "Attenuation",
+   "long": "Attenuation"
+  },
+  {
+   "key": "volume8",
+   "short": "Volume 8 (not 5)",
+   "long": "Volume at 8 (not volume at 5)"
+  },
+  {
+   "key": "bright100",
+   "short": "100pf bright (not 4700pf)",
+   "long": "100pf bright cap (not 4700pf)"
+  },
+  {
+   "key": "splitcath",
+   "short": "Split cathode (not shared)",
+   "long": "Split cathode (not shared cathode)"
+  },
+  {
+   "key": "v1b022",
+   "short": "0.022uf V1B (not 0.0022uf)",
+   "long": "0.022uf V1B coupling cap (not 0.0022uf)"
+  },
+  {
+   "key": "leadstack",
+   "short": "Lead tone stack",
+   "long": "Lead tone stack"
+  },
+  {
+   "key": "nfb67",
+   "short": "67-spec NFB (not 72)",
+   "long": "67-spec (high) NFB (not 72-spec low NFB)"
+  },
+  {
+   "key": "postpi01",
+   "short": "0.1uf post-PI (not 0.022uf)",
+   "long": "0.1uf post phase inverter couplers (not 0.022uf)"
+  },
+  {
+   "key": "filter48",
+   "short": "Filtering 48+32+32+32+32",
+   "long": "48+32+32+32+32uf filtering (not 100+50+50+32+32uf)"
+  },
+  {
+   "key": "dropres8k2",
+   "short": "2x8k2 B+ droppers (not 2x10k)",
+   "long": "2 x 8k2 B+ dropping resistors (not 2 x 10k)"
+  },
+  {
+   "key": "highbias",
+   "short": "High bias (not low)",
+   "long": "High bias (not low bias)"
+  },
+  {
+   "key": "watt18",
+   "short": "18 watt amp",
+   "long": "18 watt (separate amp)"
+  },
+  {
+   "key": "normal",
+   "short": "Normal channel",
+   "long": "Normal channel"
+  },
+  {
+   "key": "brightch",
+   "short": "Bright channel",
+   "long": "Bright channel"
+  },
+  {
+   "key": "jumpered",
+   "short": "Jumpered channels",
+   "long": "Jumpered channels"
   }
  ],
  "pairs": [

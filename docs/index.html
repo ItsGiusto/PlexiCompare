@@ -456,7 +456,7 @@ function renderSetups() {
       h('div', { class: 'name', title: s.note || '' }, s.detail || s.label)));
   }
   const pairs = (S.m.pairs || []).filter(p => S.riff.files[p.a] && S.riff.files[p.b]);
-  $('#pairsBox').hidden = !pairs.length;
+  $('#pairsBox').hidden = true;
   $('#pairsSummary').textContent = `Single-change pairs (${pairs.length})`;
   const pl = $('#pairlist'); pl.replaceChildren();
   for (const p of pairs) pl.append(h('button', { class: 'pair', onclick: () => applyPair(p) }, `${label(p.a)}  /  ${label(p.b)}`, h('small', {}, p.title || p.change)));

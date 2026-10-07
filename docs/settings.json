@@ -220,5 +220,122 @@
    "source_name": "les paul PAF bridge single notes"
   }
  },
- "featured": []
+ "featured": [],
+ "group_order": [
+  "Original mic",
+  "67 settings",
+  "73 settings",
+  "18 watt"
+ ],
+ "columns": {
+  "original": {
+   "mode": "check",
+   "heading": "Original recording"
+  },
+  "attenuation": {
+   "mode": "check",
+   "heading": "Attenuation"
+  },
+  "volume8": {
+   "mode": "check",
+   "heading": "Volume 8 (not 5)",
+   "text_heading": "Volume",
+   "labels": [
+    "8",
+    "5"
+   ]
+  },
+  "bright100": {
+   "mode": "check",
+   "heading": "100pf bright (not 4700pf)",
+   "text_heading": "Bright cap",
+   "labels": [
+    "100pf",
+    "4700pf"
+   ]
+  },
+  "splitcath": {
+   "mode": "text",
+   "heading": "Split cathode (not shared)",
+   "text_heading": "V1 cathode",
+   "labels": [
+    "split",
+    "shared"
+   ]
+  },
+  "v1b022": {
+   "mode": "check",
+   "heading": "0.022uf V1B (not 0.0022uf)",
+   "text_heading": "V1B coupling cap",
+   "labels": [
+    "0.022uf",
+    "0.0022uf"
+   ]
+  },
+  "leadstack": {
+   "mode": "check",
+   "heading": "Lead tone stack"
+  },
+  "nfb67": {
+   "mode": "check",
+   "heading": "67-spec NFB (not 72)",
+   "text_heading": "Negative feedback",
+   "labels": [
+    "67-spec (high)",
+    "72-spec (low)"
+   ]
+  },
+  "postpi01": {
+   "mode": "text",
+   "heading": "0.1uf post-PI (not 0.022uf)",
+   "text_heading": "Post-PI coupling cap",
+   "labels": [
+    "0.1uf",
+    "0.022uf"
+   ]
+  },
+  "filter48": {
+   "mode": "check",
+   "heading": "Filtering 48+32+32+32+32",
+   "text_heading": "Filtering",
+   "labels": [
+    "48+32+32+32+32uf",
+    "100+50+50+32+32uf"
+   ]
+  },
+  "dropres8k2": {
+   "mode": "check",
+   "heading": "2x8k2 B+ droppers (not 2x10k)",
+   "text_heading": "B+ dropping resistors",
+   "labels": [
+    "2 x 8k2",
+    "2 x 10k"
+   ]
+  },
+  "highbias": {
+   "mode": "check",
+   "heading": "High bias (not low)",
+   "text_heading": "Bias",
+   "labels": [
+    "high",
+    "low"
+   ]
+  },
+  "watt18": {
+   "mode": "check",
+   "heading": "18 watt amp"
+  },
+  "normal": {
+   "mode": "check",
+   "heading": "Normal channel"
+  },
+  "brightch": {
+   "mode": "check",
+   "heading": "Bright channel"
+  },
+  "jumpered": {
+   "mode": "check",
+   "heading": "Jumpered channels"
+  }
+ }
 }

@@ -3,7 +3,7 @@
 build_site.py  Turn a folder of amp-setting renders into a static A/B listening site.
 
     python build_site.py SOURCE_DIR [OUT_DIR=docs] [--serve] [--format auto|copy|flac]
-                         [--no-align] [--jobs N]
+                         [--apply-alignment] [--no-align] [--jobs N]
 
 Expects files named like
     "7 - alnico 2 strat neck single notes - 73 volume at 8 100pf bright cap.mp3"
@@ -286,10 +286,30 @@ FEATURES = [
 YES = {"1", "y", "yes", "true", "t", "check", "✓"}
 NO = {"0", "n", "no", "false", "f", "x", "✗"}
 
+# Either/or columns can show text instead of a check or x: (heading in text mode, [text for 1, text for 0]).
+COLUMN_TEXT = {
+    "volume8": ("Volume", ["8", "5"]),
+    "bright100": ("Bright cap", ["100pf", "4700pf"]),
+    "splitcath": ("V1 cathode", ["split", "shared"]),
+    "v1b022": ("V1B coupling cap", ["0.022uf", "0.0022uf"]),
+    "nfb67": ("Negative feedback", ["67-spec (high)", "72-spec (low)"]),
+    "postpi01": ("Post-PI coupling cap", ["0.1uf", "0.022uf"]),
+    "filter48": ("Filtering", ["48+32+32+32+32uf", "100+50+50+32+32uf"]),
+    "dropres8k2": ("B+ dropping resistors", ["2 x 8k2", "2 x 10k"]),
+    "highbias": ("Bias", ["high", "low"]),
+}
+TEXT_BY_DEFAULT = {"splitcath", "postpi01"}
 
-def parse_cell(v):
-    v = (v or "").strip().lower()
-    return 1 if v in YES else 0 if v in NO else None
+
+def parse_cell(v, text_ok=False):
+    """1, 0, None (blank), or for text columns the literal text typed in the cell."""
+    raw = (v or "").strip()
+    low = raw.lower()
+    if low in YES:
+        return 1
+    if low in NO:
+        return 0
+    return raw if (text_ok and raw) else None
 
 
 def infer_features(s):
@@ -372,7 +392,9 @@ def main():
     ap.add_argument("out", nargs="?", default="docs", help="output folder (default: docs)")
     ap.add_argument("--format", choices=["auto", "copy", "flac"], default="auto",
                     help="auto: keep mp3/flac as they are, convert wav/aiff to flac")
-    ap.add_argument("--no-align", action="store_true", help="skip the alignment check")
+    ap.add_argument("--no-align", action="store_true", help="skip the alignment check entirely")
+    ap.add_argument("--apply-alignment", action="store_true",
+                    help="shift playback of files found to be late (default: only report the offsets)")
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--serve", action="store_true", help="serve OUT on localhost:8000 when done")
     ap.add_argument("--port", type=int, default=8000)
@@ -410,20 +432,36 @@ def main():
     cfg.setdefault("settings", {})
     cfg.setdefault("riffs", {})
     cfg.setdefault("featured", [])
-    for s in settings:
-        cfg["settings"].setdefault(s["id"], {"label": s["label"], "detail": s["detail"], "source_name": s["raw"]})
-
-    # feature matrix (editable in features.csv)
+    # Order of the sections in the table. Edit this list in settings.json; unlisted sections go last.
+    order = cfg.setdefault("group_order", ["Original mic", "67 settings", "73 settings", "18 watt"])
+    rank = {g: i for i, g in enumerate(order)}
+    # Row order inside each section follows the row order of features.csv. Rows not in the file go last.
     feat_path = out / "features.csv"
-    existing = {}
+    existing, have_cols = {}, set()
     if feat_path.exists():
         with open(feat_path, newline="", encoding="utf-8-sig") as fh:
             rd = csv.DictReader(fh)
             have_cols = set(rd.fieldnames or [])
             for row in rd:
                 existing[(row.get("id") or "").strip()] = row
-    else:
-        have_cols = set()
+    csv_pos = {k: i for i, k in enumerate(existing)}
+    settings.sort(key=lambda s: (rank.get(s["group"], len(order) + group_rank.get(s["group"], 9)),
+                                 0 if s["id"] in csv_pos else 1, csv_pos.get(s["id"], 0), s["_ntok"], s["label"]))
+    for s in settings:
+        cfg["settings"].setdefault(s["id"], {"label": s["label"], "detail": s["detail"], "source_name": s["raw"]})
+
+    # column settings (editable in settings.json): check/x or text, headings, text for 1 and 0
+    cols_cfg = cfg.setdefault("columns", {})
+    for k, short, _ in FEATURES:
+        c = cols_cfg.setdefault(k, {})
+        c.setdefault("mode", "text" if k in TEXT_BY_DEFAULT else "check")
+        c.setdefault("heading", short)
+        if k in COLUMN_TEXT:
+            c.setdefault("text_heading", COLUMN_TEXT[k][0])
+            c.setdefault("labels", COLUMN_TEXT[k][1])
+    text_cols = {k for k, _, _ in FEATURES if cols_cfg[k].get("mode") == "text"}
+
+    # feature matrix (editable in features.csv)
     feat_vals, changed = {}, (not feat_path.exists()) or bool({k for k, _, _ in FEATURES} - have_cols)
     for s_ in settings:
         row = existing.get(s_["id"])
@@ -431,7 +469,7 @@ def main():
             feat_vals[s_["id"]] = infer_features(s_)
             changed = True
         else:
-            feat_vals[s_["id"]] = {k: parse_cell(row.get(k)) for k, _, _ in FEATURES}
+            feat_vals[s_["id"]] = {k: parse_cell(row.get(k), k in text_cols) for k, _, _ in FEATURES}
     if changed:
         with open(feat_path, "w", newline="", encoding="utf-8") as fh:
             w = csv.writer(fh)
@@ -482,6 +520,8 @@ def main():
             offs, mx, notes = [0.0] * len(items), 0.0, []
         else:
             offs, mx, notes = align_riff(items)
+        if not args.apply_alignment:
+            offs = [0.0] * len(items)      # measured and reported, but playback is left untouched
         worst_lag = max(worst_lag, mx)
         durs = [i["dur"] - o / 1000 for i, o in zip(items, offs)]
         if max(durs) - min(durs) > 0.05:
@@ -505,6 +545,15 @@ def main():
                                "label": label, "duration": round(min(durs), 3), "files": files})
         cfg["riffs"].setdefault(str(n), {"title": label, "guitar": rp["guitar"], "source_name": r["name"]})
 
+    feat_cols = []
+    for k, sh, lg in FEATURES:
+        c = cols_cfg[k]
+        text = k in text_cols
+        labels = c.get("labels")
+        labels = labels if (isinstance(labels, list) and len(labels) == 2) else None
+        head = (c.get("text_heading") or c.get("heading") or sh) if text else (c.get("heading") or sh)
+        feat_cols.append({"key": k, "short": head, "long": lg, "mode": "text" if text else "check",
+                          "labels": labels if text else None})
     pairs = single_change_pairs(settings)
     orig = next((x for x in settings if x["group"] == "Original mic"), None)
     reamp = next((x for x in settings if x["group"] == "67 settings" and x["_fam"] == {"att": "yes"}), None)
@@ -518,7 +567,7 @@ def main():
                       "detail": cfg["settings"][s["id"]].get("detail", s["detail"]),
                       "note": cfg["settings"][s["id"]].get("note", ""),
                       "features": feat_vals[s["id"]]} for s in settings],
-        "features": [{"key": k, "short": sh, "long": lg} for k, sh, lg in FEATURES],
+        "features": feat_cols,
         "pairs": cfg["featured"] if cfg["featured"] else pairs,
         "riffs": [dict(r, label=cfg["riffs"][str(r["n"])].get("title", r["label"]),
                        guitar=cfg["riffs"][str(r["n"])].get("guitar", r["guitar"])) for r in manifest_riffs],
@@ -534,8 +583,13 @@ def main():
     print("\nLoudness spread inside each riff before matching (max minus min LUFS):")
     for n, spread, mx in report:
         print(f"  riff {n:>2}: {spread:5.1f} LU   max timing offset {mx:5.1f} ms")
-    print(f"\nWorst timing offset found: {worst_lag:.1f} ms "
-          f"({'corrected in manifest' if worst_lag >= ALIGN_THRESHOLD_MS else 'treated as aligned'})")
+    if worst_lag < ALIGN_THRESHOLD_MS:
+        verdict = "files are aligned"
+    elif args.apply_alignment:
+        verdict = "corrected at playback"
+    else:
+        verdict = "NOT applied. Re-run with --apply-alignment to correct it at playback"
+    print(f"\nWorst timing offset found: {worst_lag:.1f} ms ({verdict})")
     print(f"{len(pairs)} single-change pairs found.  Site written to {out.resolve()}")
 
     if args.serve:

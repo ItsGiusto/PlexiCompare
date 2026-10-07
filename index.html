@@ -151,11 +151,18 @@ th { color: var(--mute); font-weight: 600; }
 table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 14px; }
 .matrix th, .matrix td { border-bottom: 1px solid var(--line); padding: 3px 0; text-align: center; font-weight: 400; }
 .matrix thead th { vertical-align: bottom; border-bottom: 2px solid var(--ink); background: var(--panel); }
-.matrix th.f { width: 32px; min-width: 32px; padding: 8px 0 6px; }
-.matrix th.f a { display: block; margin: 0 auto; height: 200px; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; line-height: 1.2; font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; }
+.matrix th.f { padding: 8px 0 6px; vertical-align: bottom; }
+.matrix th.f a { display: block; margin: 0 auto; line-height: 1.2; font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; }
 .matrix th.f a:hover { text-decoration: underline; }
-.matrix .pc { width: 76px; min-width: 76px; position: sticky; left: 0; z-index: 2; background: var(--panel); padding-left: 6px; }
-.matrix .nc { min-width: 200px; position: sticky; left: 76px; z-index: 2; background: var(--panel); text-align: left; padding: 3px 10px; line-height: 1.25; }
+.matrix.rot th.f { width: 30px; min-width: 30px; }
+.matrix.rot th.f.txt { width: 68px; min-width: 68px; }
+.matrix.rot th.f a { height: 200px; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; }
+.matrix.flat th.f { width: 84px; min-width: 84px; padding: 8px 5px 6px; }
+.matrix.flat th.f.txt { width: 96px; min-width: 96px; }
+.matrix.flat th.f a { white-space: normal; overflow-wrap: break-word; text-align: center; }
+.matrix td.f.val { font-size: 13px; font-weight: 500; color: var(--ink); line-height: 1.2; padding: 3px 2px; overflow-wrap: anywhere; }
+.matrix .pc { width: 72px; min-width: 72px; position: sticky; left: 0; z-index: 2; background: var(--panel); padding-left: 6px; }
+.matrix .nc { min-width: 176px; position: sticky; left: 72px; z-index: 2; background: var(--panel); text-align: left; padding: 3px 10px; line-height: 1.25; }
 .matrix tr.grp th { text-align: left; font-size: 13px; font-weight: 700; color: var(--mute); background: var(--well); padding: 6px 10px; position: sticky; left: 0; }
 .matrix td.f { font-size: 17px; font-weight: 800; }
 .matrix td.yes { color: var(--ok); }
@@ -174,6 +181,11 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
 .appendix p { margin: 0 0 10px; }
 .appendix ul { margin: 0 0 10px; padding-left: 22px; }
 .appendix a { color: var(--b); }
+.handle { position: absolute; top: 0; bottom: 0; width: 18px; margin-left: -9px; z-index: 3; cursor: ew-resize; touch-action: none; display: flex; justify-content: center; }
+.handle::before { content: ''; width: 3px; height: 100%; background: var(--ink); }
+.handle::after { content: ''; position: absolute; top: 50%; width: 12px; height: 32px; margin-top: -16px; background: var(--ink); border-radius: 4px; box-shadow: 0 0 0 2px var(--panel); }
+.handle.whole::before { opacity: .3; }
+.handle:hover::after { background: var(--b); }
 .err { padding: 12px; background: #f6dcd8; border-radius: 6px; font-weight: 600; }
 @media (max-width: 560px) {
   .stage { padding: 14px; }
@@ -200,6 +212,8 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
     <div class="modes" id="modes" role="tablist" aria-label="Listening mode"></div>
     <div class="wave" id="waveWrap" aria-label="Waveform. Click to seek, drag to loop a section.">
       <canvas id="cv"></canvas>
+      <div class="handle l" id="hL" role="slider" tabindex="0" aria-label="Loop start" aria-orientation="horizontal" title="Loop start. Drag it, or focus it and use the arrow keys (Shift for bigger steps)." hidden></div>
+      <div class="handle r" id="hR" role="slider" tabindex="0" aria-label="Loop end" aria-orientation="horizontal" title="Loop end. Drag it, or focus it and use the arrow keys (Shift for bigger steps)." hidden></div>
       <div class="loading" id="loading" hidden><span id="loadText">Loading</span><i id="loadBar"></i></div>
     </div>
     <div class="transport">
@@ -235,7 +249,10 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
 
 /* Switches for parts of the page that are built but not shown yet. */
 const ENABLED_MODES = ['compare'];   // add 'blind' and/or 'abx' to bring those tabs back
-const SHOW_PAIRS = false;            // true shows the list of one-knob-different comparisons
+const SHOW_PAIRS = false;
+const FADE_ON_SWITCH = true;        // false makes switching between settings an instant cut (can click on some material)
+const ROTATED_HEADERS = true;      // false shows the table headings as normal horizontal text, wrapped over several lines
+const MATCH_LEVELS_DEFAULT = true;  // false makes every file play at its original level until the listener turns matching on            // true shows the list of one-knob-different comparisons
 
 /* ------------------------------------------------------------------ helpers */
 const $ = (s, r = document) => r.querySelector(s);
@@ -366,7 +383,7 @@ class Engine {
   setLoop(on, ls, le) {
     const p = this.getPos();
     this.loop = on; this.ls = ls; this.le = Math.max(le, ls + 0.1);
-    if (this.playing) { let np = p; if (on && np >= this.le) np = this.ls; this.pos = np; this._restart(np); }
+    if (this.playing) { let np = p; if (on && (np >= this.le || np < this.ls)) np = this.ls; this.pos = np; this._restart(np); }
   }
   select(id) {
     const prev = this.selected;
@@ -377,8 +394,10 @@ class Engine {
       if (n.id !== prev && n.id !== id) continue;
       const target = n.id === id ? this._target(id) : 0;
       n.g.gain.cancelScheduledValues(t);
-      n.g.gain.setValueAtTime(n.g.gain.value, t);
-      n.g.gain.linearRampToValueAtTime(target, t + 0.006);
+      if (FADE_ON_SWITCH) {
+        n.g.gain.setValueAtTime(n.g.gain.value, t);
+        n.g.gain.linearRampToValueAtTime(target, t + 0.006);
+      } else n.g.gain.setValueAtTime(target, t);
     }
   }
   setMatched(b) {
@@ -413,7 +432,7 @@ class Engine {
 const engine = new Engine();
 const S = {
   m: null, riff: null, mode: 'compare', slots: { A: null, B: null }, active: 'A',
-  loopOn: true, ls: 0, le: 0, customRegion: false, matched: true,
+  loopOn: true, ls: 0, le: 0, customRegion: false, matched: MATCH_LEVELS_DEFAULT,
   blind: null, abx: null, ready: false, drag: null, dirty: true,
 };
 const color = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
@@ -479,10 +498,14 @@ function renderSlots() {
     }, h('span', { class: 'k' }, b), h('span', { class: 'n' }, sub)));
   }
   const keys = S.mode === 'abx' ? '<kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> for A, B, X' : '<kbd>1</kbd> and <kbd>2</kbd> to flip between A and B';
-  $('#hint').innerHTML = `Press ${keys} while it plays. <kbd>Space</kbd> plays and pauses, <kbd>L</kbd> loops, <kbd>[</kbd> and <kbd>]</kbd> set loop points.`;
+  $('#hint').innerHTML = `Press ${keys} while it plays. <kbd>Space</kbd> plays and pauses, <kbd>L</kbd> loops, <kbd>[</kbd> and <kbd>]</kbd> set the loop start and end at the playhead. Drag the loop edges on the waveform, or <kbd>Tab</kbd> to one and use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> (<kbd>Shift</kbd> for bigger steps).`;
 }
 
 function featCell(v, f) {
+  if (f.mode === 'text') {
+    const shown = v === 1 ? (f.labels && f.labels[0]) : v === 0 ? (f.labels && f.labels[1]) : (typeof v === 'string' ? v : null);
+    if (shown) return h('td', { class: 'f val', title: `${f.short}: ${shown}` }, shown);
+  }
   const txt = v === 1 ? '✓' : v === 0 ? '✗' : '?';
   const word = v === 1 ? 'yes' : v === 0 ? 'no' : 'not filled in';
   return h('td', { class: 'f ' + (v === 1 ? 'yes' : v === 0 ? 'no' : 'unk'), title: `${f.long}: ${word}` },
@@ -497,7 +520,7 @@ function renderSetups() {
   const head = h('tr', {},
     h('th', { class: 'pc', scope: 'col' }, 'Slot'),
     h('th', { class: 'nc', scope: 'col' }, 'Recording'),
-    feats.map(f => h('th', { class: 'f', scope: 'col', title: f.long }, h('a', { href: '#ap-' + f.key }, f.short))));
+    feats.map(f => h('th', { class: 'f' + (f.mode === 'text' ? ' txt' : ''), scope: 'col', title: f.long }, h('a', { href: '#ap-' + f.key }, f.short))));
   const body = [];
   let group = null;
   for (const s of S.m.settings) {
@@ -512,10 +535,12 @@ function renderSetups() {
       h('th', { class: 'nc', scope: 'row', title: s.note || '' }, s.detail || s.label),
       feats.map(f => featCell((s.features || {})[f.key], f))));
   }
-  box.append(h('div', { class: 'tablewrap' }, h('table', { class: 'matrix' }, h('thead', {}, head), h('tbody', {}, body))));
+  box.append(h('div', { class: 'tablewrap' }, h('table', { class: 'matrix ' + (ROTATED_HEADERS ? 'rot' : 'flat') }, h('thead', {}, head), h('tbody', {}, body))));
   if (feats.length) {
+    const hasCheck = feats.some(f => f.mode !== 'text'), hasText = feats.some(f => f.mode === 'text');
     box.append(h('p', { class: 'legend' },
-      '✓ means the amp used it. ✗ means it did not. Where a heading says "(not ...)", ✓ is the first option and ✗ is the other. ',
+      hasCheck ? '✓ means the amp used it. ✗ means it did not. Where a heading says "(not ...)", ✓ is the first option and ✗ is the other. ' : '',
+      hasText ? 'Columns with text name the setting that was used. ' : '',
       unknown ? '? means not filled in yet. ' : '', 'Click a heading to read about that setting.'));
   }
   const pairs = (S.m.pairs || []).filter(p => S.riff.files[p.a] && S.riff.files[p.b]);
@@ -678,7 +703,22 @@ function syncTransport() {
   $('#regionBtn').disabled = !S.customRegion;
   $('#regionBtn').textContent = S.customRegion ? `Loop ${fmt(S.ls)} to ${fmt(S.le)}. Reset` : 'Whole clip';
   $('#time').textContent = `${fmt(engine.getPos())} / ${fmt(engine.D || 0)}`;
+  layoutHandles();
   S.dirty = true;
+}
+function layoutHandles() {
+  const L = $('#hL'), R = $('#hR'), D = engine.D || 0;
+  const show = S.ready && S.loopOn && D > 0;
+  L.hidden = !show; R.hidden = !show;
+  if (!show) return;
+  L.style.left = (S.ls / D * 100) + '%'; R.style.left = (S.le / D * 100) + '%';
+  L.classList.toggle('whole', !S.customRegion); R.classList.toggle('whole', !S.customRegion);
+  const set = (el, min, max, now, text) => {
+    el.setAttribute('aria-valuemin', String(+min.toFixed(2))); el.setAttribute('aria-valuemax', String(+max.toFixed(2)));
+    el.setAttribute('aria-valuenow', String(+now.toFixed(2))); el.setAttribute('aria-valuetext', text);
+  };
+  set(L, 0, S.le - 0.1, S.ls, `Loop start ${fmt(S.ls)}`);
+  set(R, S.ls + 0.1, D, S.le, `Loop end ${fmt(S.le)}`);
 }
 async function togglePlay() { if (!S.ready) return; if (engine.playing) engine.pause(); else await engine.play(); syncTransport(); }
 function applyLoop() { engine.setLoop(S.loopOn, S.ls, S.le); syncTransport(); }
@@ -744,6 +784,30 @@ function wireTransport() {
   });
   wrap.addEventListener('dblclick', () => { S.ls = 0; S.le = engine.D; S.customRegion = false; applyLoop(); });
   new ResizeObserver(() => { S.dirty = true; }).observe(wrap);
+
+  // loop edges: drag with the mouse, or focus one (Tab) and use the arrow keys
+  const MIN_LOOP = 0.1;
+  let applyTimer = 0;
+  const applyLoopSoon = () => { clearTimeout(applyTimer); applyTimer = setTimeout(applyLoop, 120); };
+  function setBound(which, t) {
+    if (which === 'ls') S.ls = clamp(t, 0, S.le - MIN_LOOP); else S.le = clamp(t, S.ls + MIN_LOOP, engine.D);
+    S.customRegion = !(S.ls <= 0.005 && S.le >= engine.D - 0.005);
+    syncTransport();
+  }
+  for (const [el, which] of [[$('#hL'), 'ls'], [$('#hR'), 'le']]) {
+    el.addEventListener('pointerdown', e => { e.preventDefault(); e.stopPropagation(); el.setPointerCapture(e.pointerId); el.dataset.drag = '1'; el.focus(); });
+    el.addEventListener('pointermove', e => { if (el.dataset.drag) setBound(which, tAt(e)); });
+    const end = () => { if (!el.dataset.drag) return; delete el.dataset.drag; clearTimeout(applyTimer); applyLoop(); };
+    el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
+    el.addEventListener('keydown', e => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const step = e.shiftKey ? 0.5 : 0.05; let t = null;
+      if (e.key === 'ArrowLeft') t = S[which] - step; else if (e.key === 'ArrowRight') t = S[which] + step;
+      else if (e.key === 'Home' && which === 'ls') t = 0; else if (e.key === 'End' && which === 'le') t = engine.D;
+      if (t == null) return;
+      e.preventDefault(); e.stopPropagation(); setBound(which, t); applyLoopSoon();
+    });
+  }
   document.addEventListener('keydown', e => {
     if (e.target.closest('input, select, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
     const k = e.key.toLowerCase();

@@ -250,9 +250,9 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
 /* Switches for parts of the page that are built but not shown yet. */
 const ENABLED_MODES = ['compare'];   // add 'blind' and/or 'abx' to bring those tabs back
 const SHOW_PAIRS = false;
-const FADE_ON_SWITCH = true;        // false makes switching between settings an instant cut (can click on some material)
-const ROTATED_HEADERS = true;      // false shows the table headings as normal horizontal text, wrapped over several lines
-const MATCH_LEVELS_DEFAULT = true;  // false makes every file play at its original level until the listener turns matching on            // true shows the list of one-knob-different comparisons
+const FADE_ON_SWITCH = false;        // false makes switching between settings an instant cut (can click on some material)
+const ROTATED_HEADERS = false;      // false shows the table headings as normal horizontal text, wrapped over several lines
+const MATCH_LEVELS_DEFAULT = false;  // false makes every file play at its original level until the listener turns matching on            // true shows the list of one-knob-different comparisons
 
 /* ------------------------------------------------------------------ helpers */
 const $ = (s, r = document) => r.querySelector(s);

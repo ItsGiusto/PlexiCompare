@@ -15,6 +15,8 @@ The first run writes `docs/settings.json`. Edit it, then run the same command ag
 - `settings`: the `label` and `detail` shown for each setup. Add a `note` for a tooltip.
 - `riffs`: the title shown for each riff. Old names are tidied for display ("bridgt" becomes bridge, "neck bridge shuffle" becomes bridge shuffle, "shuffle single notes" becomes single notes), so renaming your files is optional.
 - `group_order`: the order of the sections in the table, for example `["Original mic", "67 settings", "73 settings", "18 watt"]` (the default). Reorder the list and rebuild. A section left out of the list goes at the end. Within each section, the order of the rows follows the order of the rows in `features.csv` (see below).
+- `group_titles`: the text shown for each section heading, for example `"67 settings": "67-spec amp settings"`. Only the right-hand side is the displayed text. `group_order` still uses the original names on the left. The A and B buttons keep their own short labels ("67: no attenuator"), which you edit per setup in `settings` (`label`).
+- `riff_order`: the order of the riffs in the list on the left, one line per riff, for example `"7 | Alnico 2 Strat: Neck, single notes"`. Only the number at the start of each line matters, and the rest is a reminder. Move lines up or down and rebuild, for example to put every single-notes riff first. A riff left out of the list goes at the end. The list on the left is grouped by guitar, with the groups in the order each guitar first appears, and the first riff in the list is the one that loads first.
 - `featured`: your own comparison presets, `[{"a": "<setting id>", "b": "<setting id>", "title": "Does 10k matter?"}]`. When this is empty the page lists every pair that differs by exactly one knob.
 
 Existing entries in `settings.json` are never overwritten. Delete the file to regenerate it.
@@ -38,6 +40,14 @@ Each column of the table can show a check or x, or the setting itself as text. T
 
 "V1 cathode" and "Post-PI coupling cap" start out in text mode. Every other either/or column already has its text and headings filled in, so switching it is one edit: change `"mode"` to `"text"` and rebuild. Your `features.csv` values don't change. Columns that are plain on/off (original recording, attenuation, lead tone stack, 18 watt, channels) stay check/x.
 
+## The table scrolls sideways
+
+When the table is wider than the space available, a scroll bar appears above it and another pinned to the bottom of the window while the table is on screen, so you never have to scroll down to the end of the table to move it sideways. Drag either bar, click its track to jump a page, or swipe or use Shift and the mouse wheel on the table itself. The first two columns and the section headings stay in view while you scroll, and your sideways position is kept when you pick A or B.
+
+## The riff list
+
+Drag the thin divider next to the riff list to make it narrower or wider (the width is remembered in the visitor's browser). "Hide riff list" in the bar above the player hides it completely, giving the player the full width, and the current riff stays named in that bar. Double-clicking the divider also hides it. When it is focused (Tab), the left and right arrow keys resize it and Enter hides it. On phones the list stays a collapsible block above the player.
+
 ## Loop region
 
 The loop has two edge handles on the waveform. Drag either one with the mouse, or press Tab to focus one and use the left and right arrow keys (0.05 s per press, Shift for 0.5 s; Home on the start handle and End on the end handle go to the clip edges). `[` and `]` still set the start and end at the playhead. The loop can't be shorter than 0.1 s. When you change the loop while it plays, the playhead jumps to the loop start if it was before it.
@@ -51,6 +61,8 @@ At the top of the script in `index.html`:
 - `FADE_ON_SWITCH = true`: a 6 ms fade when switching between settings. `false` makes it an instant cut, which can click on some material.
 - `ROTATED_HEADERS = true`: table headings turned sideways. `false` shows normal horizontal text wrapped over several lines, and the table scrolls sideways with the first two columns pinned.
 - `MATCH_LEVELS_DEFAULT = true`: whether level matching starts on.
+- `RAIL_WIDTH = 210`: starting width in pixels of the riff list.
+- `RAIL_START_COLLAPSED = false`: `true` starts with the riff list hidden.
 
 ## Hidden parts
 

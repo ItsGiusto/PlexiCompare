@@ -34,7 +34,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 button:disabled { cursor: default; opacity: .45; }
 :focus-visible { outline: 3px solid var(--b); outline-offset: 2px; }
 
-header { max-width: 1180px; margin: 0 auto; padding: 32px 24px 8px; }
+header { max-width: 1320px; margin: 0 auto; padding: 32px 24px 8px; }
 h1 {
   margin: 0 0 8px; font-weight: 800; font-stretch: 125%;
   font-size: clamp(26px, 4.4vw, 42px); line-height: 1.05; letter-spacing: -.01em;
@@ -42,23 +42,37 @@ h1 {
 header p { margin: 0; max-width: 58ch; color: var(--mute); }
 
 main {
-  max-width: 1180px; margin: 0 auto; padding: 20px 24px 72px;
-  display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 32px; align-items: start;
+  max-width: 1320px; margin: 0 auto; padding: 20px 24px 72px;
+  display: grid; grid-template-columns: var(--rail-w, 210px) 14px minmax(0, 1fr); gap: 0; align-items: start;
 }
-@media (max-width: 899px) { main { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
+.rail { grid-column: 1; }
+.splitter { grid-column: 2; align-self: stretch; position: relative; cursor: col-resize; touch-action: none; }
+.splitter::after { content: ''; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; border-radius: 1px; background: var(--line); }
+.splitter:hover::after, .splitter.on::after { background: var(--ink); }
+.stage { grid-column: 3; }
+main.railoff { grid-template-columns: 0 0 minmax(0, 1fr); }
+main.railoff .rail, main.railoff .splitter { display: none; }
+.stagebar { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.riffname { margin: 0; min-width: 0; font-size: 19px; font-weight: 800; font-stretch: 112%; line-height: 1.2; }
+@media (max-width: 899px) {
+  main, main.railoff { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .rail, .stage { grid-column: 1; }
+  .splitter, .stagebar { display: none; }
+}
 
 /* riff rail */
 .rail { position: sticky; top: 16px; }
+@media (min-width: 900px) { .rail { max-height: calc(100vh - 32px); overflow-y: auto; } }
 @media (max-width: 899px) { .rail { position: static; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; } }
 .rail summary { cursor: pointer; padding: 10px 12px; font-weight: 700; list-style: none; }
 .rail summary::-webkit-details-marker { display: none; }
 @media (min-width: 900px) { .rail summary { display: none; } }
-.rail h2 { margin: 18px 0 4px; font-size: 14px; font-weight: 700; color: var(--mute); }
+.rail h2 { margin: 16px 0 4px; font-size: 13px; font-weight: 700; color: var(--mute); }
 .rail h2:first-child { margin-top: 0; }
 @media (max-width: 899px) { .rail h2 { padding: 0 12px; } }
 .riff {
   display: block; width: 100%; text-align: left; border: 0; background: none;
-  padding: 7px 12px; border-radius: 4px; line-height: 1.25;
+  padding: 6px 10px; border-radius: 4px; line-height: 1.25; font-size: 15px;
 }
 .riff:hover { background: rgba(20,24,27,.06); }
 .riff[aria-current="true"] { background: var(--panel); font-weight: 700; box-shadow: inset 4px 0 0 var(--ink); }
@@ -147,7 +161,12 @@ th { color: var(--mute); font-weight: 600; }
 .setup.playing .name { font-weight: 700; }
 
 [hidden] { display: none !important; }
-.tablewrap { position: relative; overflow-x: auto; margin-top: 8px; border: 1px solid var(--line); border-radius: 8px; }
+.tablewrap { position: relative; overflow-x: auto; scrollbar-width: none; border: 1px solid var(--line); border-radius: 8px; }
+.tablewrap::-webkit-scrollbar { display: none; }
+.hbar { position: relative; height: 14px; margin: 8px 0; border-radius: 7px; background: var(--well); cursor: pointer; }
+.hbar .thumb { position: absolute; left: 0; top: 2px; height: 10px; min-width: 44px; border-radius: 5px; background: var(--mute); cursor: grab; touch-action: none; }
+.hbar .thumb:hover, .hbar .thumb.on { background: var(--ink); }
+.hbar.bottom { position: sticky; bottom: 8px; z-index: 6; margin-bottom: 0; box-shadow: 0 0 0 6px var(--panel); }
 table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 14px; }
 .matrix th, .matrix td { border-bottom: 1px solid var(--line); padding: 3px 0; text-align: center; font-weight: 400; }
 .matrix thead th { vertical-align: bottom; border-bottom: 2px solid var(--ink); background: var(--panel); }
@@ -163,7 +182,8 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
 .matrix td.f.val { font-size: 13px; font-weight: 500; color: var(--ink); line-height: 1.2; padding: 3px 2px; overflow-wrap: anywhere; }
 .matrix .pc { width: 72px; min-width: 72px; position: sticky; left: 0; z-index: 2; background: var(--panel); padding-left: 6px; }
 .matrix .nc { min-width: 176px; position: sticky; left: 72px; z-index: 2; background: var(--panel); text-align: left; padding: 3px 10px; line-height: 1.25; }
-.matrix tr.grp th { text-align: left; font-size: 13px; font-weight: 700; color: var(--mute); background: var(--well); padding: 6px 10px; position: sticky; left: 0; }
+.matrix tr.grp th { text-align: left; font-size: 13px; font-weight: 700; color: var(--mute); background: var(--well); padding: 6px 10px; }
+.matrix .grptext { position: sticky; left: 10px; display: inline-block; }
 .matrix td.f { font-size: 17px; font-weight: 800; }
 .matrix td.yes { color: var(--ok); }
 .matrix td.no { color: var(--mute); font-weight: 400; }
@@ -208,7 +228,12 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
     <summary id="railSummary">Riff</summary>
     <div id="riffs"></div>
   </details>
+  <div class="splitter" id="splitter" role="separator" aria-orientation="vertical" aria-label="Resize the riff list" tabindex="0" title="Drag to resize the riff list. Double-click to hide it."></div>
   <section class="stage" aria-label="Player">
+    <div class="stagebar">
+      <button class="tog" id="railToggle" aria-controls="rail" aria-expanded="true">Hide riff list</button>
+      <h2 class="riffname" id="riffName"></h2>
+    </div>
     <div class="modes" id="modes" role="tablist" aria-label="Listening mode"></div>
     <div class="wave" id="waveWrap" aria-label="Waveform. Click to seek, drag to loop a section.">
       <canvas id="cv"></canvas>
@@ -252,6 +277,8 @@ const ENABLED_MODES = ['compare'];   // add 'blind' and/or 'abx' to bring those 
 const SHOW_PAIRS = false;
 const FADE_ON_SWITCH = false;        // false makes switching between settings an instant cut (can click on some material)
 const ROTATED_HEADERS = false;      // false shows the table headings as normal horizontal text, wrapped over several lines
+const RAIL_WIDTH = 210;             // starting width in pixels of the riff list (visitors can drag it)
+const RAIL_START_COLLAPSED = false; // true starts with the riff list hidden
 const MATCH_LEVELS_DEFAULT = false;  // false makes every file play at its original level until the listener turns matching on            // true shows the list of one-knob-different comparisons
 
 /* ------------------------------------------------------------------ helpers */
@@ -470,6 +497,7 @@ function renderRiffs() {
     box.append(h('h2', {}, g));
     for (const r of list) box.append(h('button', { class: 'riff', 'aria-current': S.riff && S.riff.n === r.n ? 'true' : 'false', onclick: () => selectRiff(r.n) }, r.label));
   }
+  $('#riffName').textContent = S.riff ? `${S.riff.guitar ? S.riff.guitar + ', ' : ''}${S.riff.label}` : '';
   $('#railSummary').textContent = S.riff ? `Riff: ${S.riff.guitar ? S.riff.guitar + ', ' : ''}${S.riff.label}` : 'Riff';
 }
 
@@ -512,7 +540,28 @@ function featCell(v, f) {
     h('span', { 'aria-hidden': 'true' }, txt), h('span', { class: 'sr' }, word));
 }
 
+function makeHBar(wrap, where) {
+  const thumb = h('div', { class: 'thumb' });
+  const el = h('div', { class: 'hbar ' + where, 'aria-hidden': 'true' }, thumb);
+  const geo = () => { const sw = wrap.scrollWidth, cw = wrap.clientWidth, tw = el.clientWidth, w = Math.max(44, tw * cw / sw); return { w, range: tw - w, span: sw - cw }; };
+  const update = () => {
+    el.hidden = !(wrap.scrollWidth > wrap.clientWidth + 1);
+    if (el.hidden) return;
+    const g = geo();
+    thumb.style.width = g.w + 'px';
+    thumb.style.transform = `translateX(${g.span > 0 ? g.range * wrap.scrollLeft / g.span : 0}px)`;
+  };
+  let drag = null;
+  thumb.addEventListener('pointerdown', e => { e.preventDefault(); e.stopPropagation(); thumb.setPointerCapture(e.pointerId); drag = { x: e.clientX, left: wrap.scrollLeft }; thumb.classList.add('on'); });
+  thumb.addEventListener('pointermove', e => { if (!drag) return; const g = geo(); if (g.range > 0) wrap.scrollLeft = drag.left + (e.clientX - drag.x) * g.span / g.range; });
+  const done = () => { drag = null; thumb.classList.remove('on'); };
+  thumb.addEventListener('pointerup', done); thumb.addEventListener('pointercancel', done);
+  el.addEventListener('pointerdown', e => { if (e.target !== el) return; const r = thumb.getBoundingClientRect(); wrap.scrollBy({ left: (e.clientX < r.left ? -1 : 1) * wrap.clientWidth * 0.9, behavior: 'smooth' }); });
+  return { el, update };
+}
+
 function renderSetups() {
+  const prevWrap = $('#tableWrap'), keepX = prevWrap ? prevWrap.scrollLeft : 0;
   const box = $('#setups'); box.replaceChildren();
   const feats = S.m.features || [];
   const names = S.mode === 'blind' ? ['1', '2'] : ['A', 'B'];
@@ -525,7 +574,7 @@ function renderSetups() {
   let group = null;
   for (const s of S.m.settings) {
     if (!S.riff.files[s.id]) continue;
-    if (s.group !== group) { group = s.group; body.push(h('tr', { class: 'grp' }, h('th', { colspan: 2 + feats.length, scope: 'rowgroup' }, group))); }
+    if (s.group !== group) { group = s.group; body.push(h('tr', { class: 'grp' }, h('th', { colspan: 2 + feats.length, scope: 'rowgroup' }, h('span', { class: 'grptext' }, group)))); }
     const playing = engine.selected === s.id && S.mode === 'compare';
     for (const f of feats) if ((s.features || {})[f.key] == null) unknown++;
     body.push(h('tr', { class: playing ? 'playing' : '' },
@@ -535,11 +584,18 @@ function renderSetups() {
       h('th', { class: 'nc', scope: 'row', title: s.note || '' }, s.detail || s.label),
       feats.map(f => featCell((s.features || {})[f.key], f))));
   }
-  box.append(h('div', { class: 'tablewrap' }, h('table', { class: 'matrix ' + (ROTATED_HEADERS ? 'rot' : 'flat') }, h('thead', {}, head), h('tbody', {}, body))));
+  const wrap = h('div', { class: 'tablewrap', id: 'tableWrap', tabindex: '0', role: 'region', 'aria-label': 'Recordings and the amp settings used. Scrolls sideways.' },
+    h('table', { class: 'matrix ' + (ROTATED_HEADERS ? 'rot' : 'flat') }, h('thead', {}, head), h('tbody', {}, body)));
+  const topBar = makeHBar(wrap, 'top'), botBar = makeHBar(wrap, 'bottom');
+  box.append(topBar.el, wrap, botBar.el);
+  const refreshBars = () => { topBar.update(); botBar.update(); };
+  wrap.addEventListener('scroll', refreshBars, { passive: true });
+  const ro = new ResizeObserver(refreshBars); ro.observe(wrap); ro.observe(wrap.firstChild);
+  wrap.scrollLeft = keepX; refreshBars();
   if (feats.length) {
     const hasCheck = feats.some(f => f.mode !== 'text'), hasText = feats.some(f => f.mode === 'text');
     box.append(h('p', { class: 'legend' },
-      hasCheck ? '✓ means the amp used it. ✗ means it did not. Where a heading says "(not ...)", ✓ is the first option and ✗ is the other. ' : '',
+      hasCheck ? '✓ means the amp used it. ✗ means it did not. ' : '',
       hasText ? 'Columns with text name the setting that was used. ' : '',
       unknown ? '? means not filled in yet. ' : '', 'Click a heading to read about that setting.'));
   }
@@ -826,6 +882,35 @@ function wireTransport() {
   });
 }
 
+/* ------------------------------------------------------------------ riff list: resize and hide */
+function setupRail() {
+  const main = $('main'), split = $('#splitter'), btn = $('#railToggle'), KEY = 'plexi-ab-rail', LO = 140, HI = 420;
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { /* storage unavailable */ }
+  let width = clamp(+saved.w || RAIL_WIDTH, LO, HI), off = saved.off != null ? !!saved.off : RAIL_START_COLLAPSED;
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ w: width, off })); } catch { /* ignore */ } };
+  const apply = () => {
+    main.style.setProperty('--rail-w', width + 'px'); main.classList.toggle('railoff', off);
+    btn.textContent = off ? 'Show riff list' : 'Hide riff list'; btn.setAttribute('aria-expanded', off ? 'false' : 'true'); S.dirty = true;
+  };
+  btn.onclick = () => { off = !off; apply(); save(); };
+  split.addEventListener('dblclick', () => { off = true; apply(); save(); });
+  split.addEventListener('pointerdown', e => { e.preventDefault(); split.setPointerCapture(e.pointerId); split.classList.add('on'); split.dataset.drag = '1'; split.focus(); });
+  split.addEventListener('pointermove', e => {
+    if (!split.dataset.drag) return;
+    const left = main.getBoundingClientRect().left + parseFloat(getComputedStyle(main).paddingLeft);
+    width = clamp(e.clientX - left - 7, LO, HI); apply();
+  });
+  const end = () => { if (!split.dataset.drag) return; delete split.dataset.drag; split.classList.remove('on'); save(); };
+  split.addEventListener('pointerup', end); split.addEventListener('pointercancel', end);
+  split.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') width = clamp(width - 16, LO, HI); else if (e.key === 'ArrowRight') width = clamp(width + 16, LO, HI);
+    else if (e.key === 'Enter') off = true; else return;
+    e.preventDefault(); e.stopPropagation(); apply(); save();
+  });
+  apply();
+}
+
 /* ------------------------------------------------------------------ appendix (appendix.md) */
 function mdInline(t) {
   const out = [], re = /(\*\*[^*]+\*\*|\*[^*\s][^*]*\*|`[^`]+`|\[[^\]]+\]\([^)\s]+\))/g;
@@ -892,6 +977,7 @@ async function boot() {
   document.title = m.title; $('#title').textContent = m.title; $('#intro').textContent = m.intro || '';
   window.__plexi = { engine, S, Engine };
   wireTransport();
+  setupRail();
   loadAppendix();
   const hs = readHash();
   if (ENABLED_MODES.includes(hs.mode)) S.mode = hs.mode;

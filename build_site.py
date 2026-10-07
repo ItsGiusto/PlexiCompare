@@ -80,7 +80,7 @@ def parse_setting(raw):
     s = raw.strip().lower().replace("attenutaor", "attenuator").replace("_", " ")
     if s.startswith("original"):
         return {"group": "Original mic", "short": "Original mic", "tokens": [],
-                "detail": "Mic'd amp from the original DI take (67 settings, yes attenuator), not re-amped",
+                "detail": "Mic'd amp from the original DI take, not re-amped",
                 "label": "Original mic", "fam": {}}
     m = re.match(r"^(\d+)\s*watt\b\s*(.*)$", s)
     if m:
@@ -435,6 +435,10 @@ def main():
     # Order of the sections in the table. Edit this list in settings.json; unlisted sections go last.
     order = cfg.setdefault("group_order", ["Original mic", "67 settings", "73 settings", "18 watt"])
     rank = {g: i for i, g in enumerate(order)}
+    # Text shown for each section heading. Edit the right-hand side in settings.json.
+    titles = cfg.setdefault("group_titles", {})
+    for g in dict.fromkeys(s_["group"] for s_ in settings):
+        titles.setdefault(g, g)
     # Row order inside each section follows the row order of features.csv. Rows not in the file go last.
     feat_path = out / "features.csv"
     existing, have_cols = {}, set()
@@ -545,6 +549,17 @@ def main():
                                "label": label, "duration": round(min(durs), 3), "files": files})
         cfg["riffs"].setdefault(str(n), {"title": label, "guitar": rp["guitar"], "source_name": r["name"]})
 
+    # Riff order: edit riff_order in settings.json. Each line starts with the riff's number, the rest is only a reminder.
+    def riff_line(r):
+        c = cfg["riffs"][str(r["n"])]
+        return f'{r["n"]} | {c.get("guitar", r["guitar"])}: {c.get("title", r["label"])}'
+    roc = cfg.setdefault("riff_order", [riff_line(r) for r in manifest_riffs])
+    rpos = {}
+    for i, item in enumerate(roc):
+        m_ = re.match(r"\s*(\d+)", str(item))
+        if m_ and int(m_.group(1)) not in rpos:
+            rpos[int(m_.group(1))] = i
+    manifest_riffs.sort(key=lambda r: (rpos.get(r["n"], len(roc)), r["n"]))
     feat_cols = []
     for k, sh, lg in FEATURES:
         c = cols_cfg[k]
@@ -562,7 +577,7 @@ def main():
                          "change": "same settings, original mic take vs the re-amp of it"})
     manifest = {
         "title": cfg["title"], "intro": cfg["intro"],
-        "settings": [{"id": s["id"], "group": s["group"],
+        "settings": [{"id": s["id"], "group": titles.get(s["group"], s["group"]),
                       "label": cfg["settings"][s["id"]].get("label", s["label"]),
                       "detail": cfg["settings"][s["id"]].get("detail", s["detail"]),
                       "note": cfg["settings"][s["id"]].get("note", ""),

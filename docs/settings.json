@@ -4,97 +4,97 @@
  "settings": {
   "original-mic": {
    "label": "Original mic",
-   "detail": "Mic'd amp from the original DI take (67 settings, yes attenuator), not re-amped",
+   "detail": "Mic'd amp from the original DI take, not re-amped",
    "source_name": "original_mic"
   },
   "18-watt": {
    "label": "18 watt",
-   "detail": "",
+   "detail": "Marshall 1974x, 18 watt, single tone-knob amp",
    "source_name": "18 watt"
   },
   "67-settings-022-pi": {
-   "label": "67: 022 pi",
-   "detail": "022 pi",
+   "label": "67, 0.022 pi",
+   "detail": "1967-like plexi specs, but with smaller post-pi coupling caps",
    "source_name": "67 settings 022 pi"
   },
   "67-settings-no-attenutaor": {
-   "label": "67: no attenuator",
-   "detail": "no attenuator",
+   "label": "67, no attenuator",
+   "detail": "1967-like plexi specs, not run through attenuation",
    "source_name": "67 settings no attenutaor"
   },
   "67-settings-yes-attenuator": {
-   "label": "67: yes attenuator",
-   "detail": "yes attenuator",
+   "label": "67, yes attenuator",
+   "detail": "1967-like plexi specs, run through attenuation",
    "source_name": "67 settings yes attenuator"
   },
   "67-settings-022-50p50": {
-   "label": "67: 022, 50+50",
-   "detail": "022, 50+50",
+   "label": "67, 0.022 pi, high filtering",
+   "detail": "1967-like plexi specs, but with smaller PPI caps and higher filtering",
    "source_name": "67 settings 022 50+50"
   },
   "67-settings-022-10k-50p50": {
-   "label": "67: 022, 10k, 50+50",
-   "detail": "022, 10k, 50+50",
+   "label": "67, 0.022 pi, high filtering and dropping",
+   "detail": "1967-like plexi specs, but with smaller PPI caps, higher filtering, and higher b+ dropping resistors",
    "source_name": "67 settings 022 10k 50+50"
   },
   "67-settings-lower-bias-022-10k-50p50": {
-   "label": "67: lower bias, 022, 10k, 50+50",
-   "detail": "lower bias, 022, 10k, 50+50",
+   "label": "67, colder bias, 0.022 pi, high filtering and dropping",
+   "detail": "1967-like plexi specs, but with smaller PPI caps, higher filtering, higher b+ dropping resistors, and biased cooler",
    "source_name": "67 settings lower bias 022 10k 50+50"
   },
   "73-settings-volume-at-5-100pf-bright-cap": {
-   "label": "73: volume at 5, 100pf bright cap",
-   "detail": "volume at 5, 100pf bright cap",
+   "label": "72, volume at 5, lower dropping and filtering, larger ppi caps, 100pf bright cap",
+   "detail": "1972-like JMP specs, volume at 5 on bright channel, with lower b+ dropping resistors, lower filtering, larger post-pi caps, and 100pf bright cap",
    "source_name": "73 settings volume at 5 100pf bright cap"
   },
   "73-volume-at-5-4700-bright-cap": {
-   "label": "73: volume at 5, 4700 bright cap",
-   "detail": "volume at 5, 4700 bright cap",
+   "label": "72, volume at 5, lower dropping and filtering, larger ppi caps",
+   "detail": "1972-like JMP specs, volume at 5 on bright channel, with lower b+ dropping resistors, lower filtering, and larger post-pi caps",
    "source_name": "73 volume at 5 4700 bright cap"
   },
   "73-volume-at-8-100pf-bright-cap": {
-   "label": "73: volume at 8, 100pf bright cap",
-   "detail": "volume at 8, 100pf bright cap",
+   "label": "72, lower dropping and filtering, larger ppi caps, 100pf bright cap",
+   "detail": "1972-like JMP specs, on bright channel, with lower b+ dropping resistors, lower filtering, larger post-pi caps, and 100pf bright cap",
    "source_name": "73 volume at 8 100pf bright cap"
   },
   "73-settings-volume-at-8-with-4700-bright-cap": {
-   "label": "73: volume at 8, 4700 bright cap",
-   "detail": "volume at 8, 4700 bright cap",
+   "label": "72, lower dropping and filtering, larger ppi caps",
+   "detail": "1972-like JMP specs, on bright channel, with lower b+ dropping resistors, lower filtering, and larger post-pi caps",
    "source_name": "73 settings volume at 8 with 4700 bright cap"
   },
   "73-volume-at-8-100pf-bright-cap-022-pi": {
-   "label": "73: volume at 8, 100pf bright cap, 022 pi",
-   "detail": "volume at 8, 100pf bright cap, 022 pi",
+   "label": "72, lower dropping and filtering, 100pf bright cap",
+   "detail": "1972-like JMP specs, on bright channel, with lower b+ dropping resistors, lower filtering, and 100pf bright cap",
    "source_name": "73 volume at 8 100pf bright cap 022 pi"
   },
   "73-settings-volume-at-8-4700-bright-cap-022-pi": {
-   "label": "73: volume at 8, 4700 bright cap, 022 pi",
-   "detail": "volume at 8, 4700 bright cap, 022 pi",
+   "label": "72, lower dropping and filtering",
+   "detail": "1972-like JMP specs, on bright channel, with lower b+ dropping resistors and lower filtering",
    "source_name": "73 settings volume at 8 4700 bright cap 022 pi"
   },
   "73-volume-at-8-4700-bright-022-50p50": {
-   "label": "73: volume at 8, 4700 bright cap, 022, 50+50",
-   "detail": "volume at 8, 4700 bright cap, 022, 50+50",
+   "label": "72, lower dropping",
+   "detail": "1972-like JMP specs, on bright channel, with lower b+ dropping resistors",
    "source_name": "73 volume at 8 4700 bright 022 50+50"
   },
   "73-volume-at-8-4700-bright-cap-10k-022-50p50": {
-   "label": "73: volume at 8, 4700 bright cap, 022, 10k, 50+50",
-   "detail": "volume at 8, 4700 bright cap, 022, 10k, 50+50",
+   "label": "72, bright channel",
+   "detail": "1972-like JMP specs, on bright channel",
    "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50"
   },
   "73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels": {
-   "label": "73: volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
-   "detail": "volume at 8, 4700 bright cap, jumpered channels, 022, 10k, 50+50",
+   "label": "72, jumpered channels",
+   "detail": "1972-like JMP specs, with jumpered channels",
    "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50 jumpered channels"
   },
   "73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias": {
-   "label": "73: volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
-   "detail": "volume at 8, 4700 bright cap, lower bias, 022, 10k, 50+50",
+   "label": "72, cooler bias, bright channel",
+   "detail": "1972-like JMP specs, on bright channel, biased cooler",
    "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50 lower bias"
   },
   "73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel": {
-   "label": "73: volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
-   "detail": "volume at 8, 4700 bright cap, normal channel, 022, 10k, 50+50",
+   "label": "72, normal channel",
+   "detail": "1972-like JMP specs, on normal channel",
    "source_name": "73 volume at 8 4700 bright cap 10k 022 50+50 normal channel"
   }
  },
@@ -337,5 +337,37 @@
    "mode": "check",
    "heading": "Jumpered channels"
   }
- }
+ },
+ "group_titles": {
+  "Original mic": "Original mic (with 67 settings)",
+  "18 watt": "18 watt",
+  "67 settings": "67 settings",
+  "73 settings": "72 settings"
+ },
+ "riff_order": [
+  "7 | Alnico 2 Strat: Neck, chordal textures",
+  "8 | Alnico 2 Strat: Bridge, chordal textures",
+  "3 | Alnico 2 Strat: Neck, low blues riff",
+  "4 | Alnico 2 Strat: Bridge, low blues riff",
+  "5 | Alnico 2 Strat: Neck, shuffle",
+  "6 | Alnico 2 Strat: Bridge, shuffle",
+  "1 | Alnico 2 Strat: Neck, single notes",
+  "2 | Alnico 2 Strat: Bridge, single notes",
+  "15 | Ceramic Strat: Neck, chordal textures",
+  "16 | Ceramic Strat: Bridge, chordal textures",
+  "11 | Ceramic Strat: Neck, low blues riff",
+  "12 | Ceramic Strat: Bridge, low blues riff",
+  "13 | Ceramic Strat: Neck, shuffle",
+  "14 | Ceramic Strat: Bridge, shuffle",
+  "9 | Ceramic Strat: Neck, single notes",
+  "10 | Ceramic Strat: Bridge, single notes",
+  "23 | Les Paul PAF: Neck, chordal textures",
+  "24 | Les Paul PAF: Bridge, chordal textures",
+  "19 | Les Paul PAF: Neck, low blues riff",
+  "20 | Les Paul PAF: Bridge, low blues riff",
+  "21 | Les Paul PAF: Neck, shuffle",
+  "22 | Les Paul PAF: Bridge, shuffle",
+  "17 | Les Paul PAF: Neck, single notes",
+  "18 | Les Paul PAF: Bridge, single notes"
+ ]
 }

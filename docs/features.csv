@@ -17,4 +17,4 @@ original-mic,original_mic,1,1,8,100pf,shared,22nf,bass,JTM-45 value,0.1uf,48+32+
 73-volume-at-8-4700-bright-cap-10k-022-50p50,73 volume at 8 4700 bright cap 10k 022 50+50,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,0,1,0
 73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels,73 volume at 8 4700 bright cap 10k 022 50+50 jumpered channels,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,0,0,1
 73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias,73 volume at 8 4700 bright cap 10k 022 50+50 lower bias,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,60.00%,0,0,1,0
-73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel,73 volume at 8 4700 bright cap 10k 022 50+50 normal channel,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,1,0,0
+73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel,73 volume at 8 4700 bright cap 10k 022 50+50 normal channel,0,1,8,N/A,split,2.2nf,lead,72 JMP value,N/A,100+50+50+32+32uf,10k + 10k,70.00%,0,1,0,0

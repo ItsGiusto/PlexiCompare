@@ -237,7 +237,7 @@
    "heading": "Attenuation"
   },
   "volume8": {
-   "mode": "check",
+   "mode": "text",
    "heading": "Volume 8 (not 5)",
    "text_heading": "Volume",
    "labels": [
@@ -246,7 +246,7 @@
    ]
   },
   "bright100": {
-   "mode": "check",
+   "mode": "text",
    "heading": "100pf bright (not 4700pf)",
    "text_heading": "Bright cap",
    "labels": [
@@ -264,7 +264,7 @@
    ]
   },
   "v1b022": {
-   "mode": "check",
+   "mode": "text",
    "heading": "0.022uf V1B (not 0.0022uf)",
    "text_heading": "V1B coupling cap",
    "labels": [
@@ -273,11 +273,11 @@
    ]
   },
   "leadstack": {
-   "mode": "check",
+   "mode": "text",
    "heading": "Lead tone stack"
   },
   "nfb67": {
-   "mode": "check",
+   "mode": "text",
    "heading": "67-spec NFB (not 72)",
    "text_heading": "Negative feedback",
    "labels": [
@@ -295,7 +295,7 @@
    ]
   },
   "filter48": {
-   "mode": "check",
+   "mode": "text",
    "heading": "Filtering 48+32+32+32+32",
    "text_heading": "Filtering",
    "labels": [
@@ -304,7 +304,7 @@
    ]
   },
   "dropres8k2": {
-   "mode": "check",
+   "mode": "text",
    "heading": "2x8k2 B+ droppers (not 2x10k)",
    "text_heading": "B+ dropping resistors",
    "labels": [
@@ -313,7 +313,7 @@
    ]
   },
   "highbias": {
-   "mode": "check",
+   "mode": "text",
    "heading": "High bias (not low)",
    "text_heading": "Bias",
    "labels": [

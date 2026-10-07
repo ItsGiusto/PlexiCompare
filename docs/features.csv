@@ -1,20 +1,20 @@
 id,setting,original,attenuation,volume8,bright100,splitcath,v1b022,leadstack,nfb67,postpi01,filter48,dropres8k2,highbias,watt18,normal,brightch,jumpered
-original-mic,original_mic,1,1,,,,,,,,,,,0,,,
-18-watt,18 watt,0,,,,,,,,,,,,1,,,
-67-settings-022-pi,67 settings 022 pi,0,,,,,,,,,,,,0,,,
-67-settings-no-attenutaor,67 settings no attenutaor,0,0,,,,,,,,,,,0,,,
-67-settings-yes-attenuator,67 settings yes attenuator,0,1,,,,,,,,,,,0,,,
-67-settings-022-50p50,67 settings 022 50+50,0,,,,,,,,,,,,0,,,
-67-settings-022-10k-50p50,67 settings 022 10k 50+50,0,,,,,,,,,,,,0,,,
-67-settings-lower-bias-022-10k-50p50,67 settings lower bias 022 10k 50+50,0,,,,,,,,,,,0,0,,,
-73-settings-volume-at-5-100pf-bright-cap,73 settings volume at 5 100pf bright cap,0,,0,1,,,,,,,,,0,,,
-73-volume-at-5-4700-bright-cap,73 volume at 5 4700 bright cap,0,,0,0,,,,,,,,,0,,,
-73-volume-at-8-100pf-bright-cap,73 volume at 8 100pf bright cap,0,,1,1,,,,,,,,,0,,,
-73-settings-volume-at-8-with-4700-bright-cap,73 settings volume at 8 with 4700 bright cap,0,,1,0,,,,,,,,,0,,,
-73-volume-at-8-100pf-bright-cap-022-pi,73 volume at 8 100pf bright cap 022 pi,0,,1,1,,,,,,,,,0,,,
-73-settings-volume-at-8-4700-bright-cap-022-pi,73 settings volume at 8 4700 bright cap 022 pi,0,,1,0,,,,,,,,,0,,,
-73-volume-at-8-4700-bright-022-50p50,73 volume at 8 4700 bright 022 50+50,0,,1,0,,,,,,,,,0,,,
-73-volume-at-8-4700-bright-cap-10k-022-50p50,73 volume at 8 4700 bright cap 10k 022 50+50,0,,1,0,,,,,,,,,0,,,
-73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels,73 volume at 8 4700 bright cap 10k 022 50+50 jumpered channels,0,,1,0,,,,,,,,,0,,,1
-73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias,73 volume at 8 4700 bright cap 10k 022 50+50 lower bias,0,,1,0,,,,,,,,0,0,,,
-73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel,73 volume at 8 4700 bright cap 10k 022 50+50 normal channel,0,,1,0,,,,,,,,,0,1,,
+original-mic,original_mic,1,1,8,100pf,shared,22nf,bass,JTM-45 value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+18-watt,18 watt,0,1,8,N/A,N/A,N/A,bass,N/A,N/A,N/A,N/A,70.00%,1,0,1,0
+67-settings-022-pi,67 settings 022 pi,0,1,8,100pf,shared,22nf,bass,JTM-45 value,0.022uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+67-settings-no-attenutaor,67 settings no attenutaor,0,0,8,100pf,shared,22nf,bass,JTM-45 value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+67-settings-yes-attenuator,67 settings yes attenuator,0,1,8,100pf,shared,22nf,bass,JTM-45 value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+67-settings-022-50p50,67 settings 022 50+50,0,1,8,100pf,shared,22nf,bass,JTM-45 value,0.022uf,100+50+50+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+67-settings-022-10k-50p50,67 settings 022 10k 50+50,0,1,8,100pf,shared,22nf,bass,JTM-45 value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,0,1,0
+67-settings-lower-bias-022-10k-50p50,67 settings lower bias 022 10k 50+50,0,1,8,100pf,shared,22nf,bass,JTM-45 value,0.022uf,100+50+50+32+32uf,10k + 10k,60.00%,0,0,1,0
+73-settings-volume-at-5-100pf-bright-cap,73 settings volume at 5 100pf bright cap,0,1,5,100pf,split,2.2nf,lead,72 JMP value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-volume-at-5-4700-bright-cap,73 volume at 5 4700 bright cap,0,1,5,4700pf,split,2.2nf,lead,72 JMP value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-volume-at-8-100pf-bright-cap,73 volume at 8 100pf bright cap,0,1,8,100pf,split,2.2nf,lead,72 JMP value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-settings-volume-at-8-with-4700-bright-cap,73 settings volume at 8 with 4700 bright cap,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.1uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-volume-at-8-100pf-bright-cap-022-pi,73 volume at 8 100pf bright cap 022 pi,0,1,8,100pf,split,2.2nf,lead,72 JMP value,0.022uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-settings-volume-at-8-4700-bright-cap-022-pi,73 settings volume at 8 4700 bright cap 022 pi,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,48+32+32+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-volume-at-8-4700-bright-022-50p50,73 volume at 8 4700 bright 022 50+50,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,8k2 + 8k2,70.00%,0,0,1,0
+73-volume-at-8-4700-bright-cap-10k-022-50p50,73 volume at 8 4700 bright cap 10k 022 50+50,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,0,1,0
+73-volume-at-8-4700-bright-cap-10k-022-50p50-jumpered-channels,73 volume at 8 4700 bright cap 10k 022 50+50 jumpered channels,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,0,0,1
+73-volume-at-8-4700-bright-cap-10k-022-50p50-lower-bias,73 volume at 8 4700 bright cap 10k 022 50+50 lower bias,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,60.00%,0,0,1,0
+73-volume-at-8-4700-bright-cap-10k-022-50p50-normal-channel,73 volume at 8 4700 bright cap 10k 022 50+50 normal channel,0,1,8,4700pf,split,2.2nf,lead,72 JMP value,0.022uf,100+50+50+32+32uf,10k + 10k,70.00%,0,1,0,0

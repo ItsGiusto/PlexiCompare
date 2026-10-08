@@ -1,6 +1,6 @@
 {
  "title": "Plexi settings, back to back",
- "intro": "One performance, re-amped through every setup. Flip between them while it plays and hear what actually changes.",
+ "intro": "The same DI-ed recordings were re-amped through every setup. Flip between them while it plays and hear what actually changes. See below for more info on each setting and overall setup.",
  "settings": [
   {
    "id": "original-mic",
@@ -506,7 +506,7 @@
   {
    "key": "bright100",
    "short": "Bright cap",
-   "long": "100pf bright cap (not 4700pf)",
+   "long": "Bright cap",
    "mode": "text",
    "labels": [
     "100pf",

@@ -269,7 +269,7 @@ FEATURES = [
     ("original", "Original recording", "Original recording"),
     ("attenuation", "Attenuation", "Attenuation"),
     ("volume8", "Volume 8 (not 5)", "Volume at 8 (not volume at 5)"),
-    ("bright100", "100pf bright (not 4700pf)", "100pf bright cap (not 4700pf)"),
+    ("bright100", "Bright cap", "Bright cap"),
     ("splitcath", "Split cathode (not shared)", "Split cathode (not shared cathode)"),
     ("v1b022", "0.022uf V1B (not 0.0022uf)", "0.022uf V1B coupling cap (not 0.0022uf)"),
     ("leadstack", "Lead tone stack", "Lead tone stack"),
@@ -427,8 +427,7 @@ def main():
     cfg_path = out / "settings.json"
     cfg = json.loads(cfg_path.read_text(encoding="utf-8")) if cfg_path.exists() else {}
     cfg.setdefault("title", "Plexi settings, back to back")
-    cfg.setdefault("intro", "One performance, re-amped through every setup. Flip between them while it plays "
-                            "and hear what actually changes.")
+    cfg.setdefault("intro", "The same DI-ed recordings were re-amped through every setup. Flip between them while it plays and hear what actually changes. See below for more info on each setting and overall setup.")
     cfg.setdefault("settings", {})
     cfg.setdefault("riffs", {})
     cfg.setdefault("featured", [])

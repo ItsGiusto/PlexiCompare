@@ -275,7 +275,7 @@ table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-s
 /* Switches for parts of the page that are built but not shown yet. */
 const ENABLED_MODES = ['compare'];   // add 'blind' and/or 'abx' to bring those tabs back
 const SHOW_PAIRS = false;
-const FADE_ON_SWITCH = false;        // false makes switching between settings an instant cut (can click on some material)
+const FADE_ON_SWITCH = true;        // false makes switching between settings an instant cut (can click on some material)
 const ROTATED_HEADERS = false;      // false shows the table headings as normal horizontal text, wrapped over several lines
 const RAIL_WIDTH = 210;             // starting width in pixels of the riff list (visitors can drag it)
 const RAIL_START_COLLAPSED = false; // true starts with the riff list hidden
@@ -423,7 +423,7 @@ class Engine {
       n.g.gain.cancelScheduledValues(t);
       if (FADE_ON_SWITCH) {
         n.g.gain.setValueAtTime(n.g.gain.value, t);
-        n.g.gain.linearRampToValueAtTime(target, t + 0.006);
+        n.g.gain.linearRampToValueAtTime(target, t + 0.04);
       } else n.g.gain.setValueAtTime(target, t);
     }
   }
@@ -595,8 +595,8 @@ function renderSetups() {
   if (feats.length) {
     const hasCheck = feats.some(f => f.mode !== 'text'), hasText = feats.some(f => f.mode === 'text');
     box.append(h('p', { class: 'legend' },
-      hasCheck ? '✓ means the amp used it. ✗ means it did not. ' : '',
-      hasText ? 'Columns with text name the setting that was used. ' : '',
+    //  hasCheck ? '✓ means the amp used it. ✗ means it did not. ' : '',
+    //  hasText ? 'Columns with text name the setting that was used. ' : '',
       unknown ? '? means not filled in yet. ' : '', 'Click a heading to read about that setting.'));
   }
   const pairs = (S.m.pairs || []).filter(p => S.riff.files[p.a] && S.riff.files[p.b]);
@@ -612,6 +612,7 @@ function renderPanel() {
   const same = A && B && A === B;
   if (S.mode === 'compare') {
     box.append(h('p', { class: 'muted' }, 'Choose a setup for A and one for B in the list below. Assigning the one that is playing changes the sound right away, so you can sweep through the list with B while A stays put.'));
+    box.append(h('p', { class: 'muted' }, 'Note: if a clip is blank when you try to play it, that means I did not record that particular riff with that particular setting.'));
     return;
   }
   if (S.mode === 'blind') {

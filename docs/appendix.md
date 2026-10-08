@@ -26,7 +26,9 @@
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Bright cap {#ap-bright100}
-- The cap that bridges the volume pot. Older JTM-45 style Marshalls tended to use low values, such as 100pf. Later Marshalls tended to use 4700pf.
+- The cap that bridges the volume pot.
+- Older JTM-45 style Marshalls tended to use low values, such as 100pf.
+- Later Marshalls tended to use 4700pf.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Split/shared cathode {#ap-splitcath}
@@ -45,23 +47,30 @@
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Negative feedback {#ap-nfb67}
-- The value of the negative feedback resistor, and the tap it was tapped off of. Older Marshalls tended to use lower resistors for higher NFB, and later Marshalls tended to use higher resistors for lower NFB.
+- The value of the negative feedback resistor, and the tap it was tapped off of.
+- Older Marshalls tended to use lower resistors tapped from  higher taps, for higher NFB.
+- Later Marshalls tended to use higher resistors tapped from lower taps for lower NFB.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Post phase inverter couplers {#ap-postpi01}
-- The coupling cap used between the phase inverter tubes and the power tubes. Older and bass-spec Marshalls used 0.1uf and newer lead spec ones used 0.022uf.
+- The coupling cap used between the phase inverter tubes and the power tubes.
+- Older and bass-spec Marshalls used 0.1uf.
+- Newer lead spec ones used 0.022uf.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Filtering {#ap-filter48}
-- The filter cap values used at each point of the B+ voltage. As Marshalls progressed through the late 60s and early 70s, filtering generally was stepped up.
+- The filter cap values used at each point of the B+ voltage. 
+- As Marshalls progressed through the late 60s and early 70s, filtering generally was stepped up.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### B+ dropping resistors {#ap-dropres8k2}
-- The value of the resistors which drop the B+ voltage between the choke and the PI tube. Older Marshalls tended to use 8k2 resistors, and later ones tended to use 10k resistors.
+- The value of the resistors which drop the B+ voltage between the choke and the PI tube. 
+- Older Marshalls tended to use 8k2 resistors.
+- Later ones tended to use 10k resistors.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Bias {#ap-highbias}
-- The dissipation percent the amp was biased to.
+- The dissipation percent the amp was biased to. Between 60 and 70% is typical for amps like these.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### 18 watt (separate amp) {#ap-watt18}
@@ -69,13 +78,13 @@
 - Ran clips through 1974x as a control. Tone control was set on full. Ran this through same 4x16 greenback cab as the 50w plexi clone.
 
 ### Normal channel {#ap-normal}
-- Whether I was running this through only the bright channel, high input. Only one clip was run this way.
+- Whether I was running this through only the bright channel, high input. Only one row was run this way.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Bright channel {#ap-brightch}
-- Whether I was running this through only the bright channel, high input. Most clips were run this way.
+- Whether I was running this through only the bright channel, high input. Most rows were run this way.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Jumpered channels {#ap-jumpered}
-- Whether I was running this through only the bright channel, which was then jumpered into the normal channel. Only one clip was run this way.
+- Whether I was running this through only the bright channel, which was then jumpered into the normal channel. Only one row was run this way.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->

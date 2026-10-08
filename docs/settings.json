@@ -101,42 +101,42 @@
  "riffs": {
   "1": {
    "title": "Neck, chordal textures",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat neck chordal textures"
   },
   "2": {
    "title": "Bridge, chordal textures",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat bridge chordal textures"
   },
   "3": {
    "title": "Neck, low blues riff",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat neck low blues riff"
   },
   "4": {
    "title": "Bridge, low blues riff",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat bridge low blues riff"
   },
   "5": {
    "title": "Neck, shuffle",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat neck shuffle"
   },
   "6": {
    "title": "Bridge, shuffle",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat bridge shuffle"
   },
   "7": {
    "title": "Neck, single notes",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat neck single notes"
   },
   "8": {
    "title": "Bridge, single notes",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "source_name": "alnico 2 strat bridge single notes"
   },
   "9": {
@@ -181,42 +181,42 @@
   },
   "17": {
    "title": "Neck, chordal textures",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF neck chordal textures"
   },
   "18": {
    "title": "Bridge, chordal textures",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF bridge chordal textures"
   },
   "19": {
    "title": "Neck, low blues riff",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF neck low blues riff"
   },
   "20": {
    "title": "Bridge, low blues riff",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF bridge low blues riff"
   },
   "21": {
    "title": "Neck, shuffle",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF neck shuffle"
   },
   "22": {
    "title": "Bridge, shuffle",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF bridge shuffle"
   },
   "23": {
    "title": "Neck, single notes",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF neck single notes"
   },
   "24": {
    "title": "Bridge, single notes",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "source_name": "les paul PAF bridge single notes"
   }
  },
@@ -361,13 +361,13 @@
   "14 | Ceramic Strat: Bridge, shuffle",
   "9 | Ceramic Strat: Neck, single notes",
   "10 | Ceramic Strat: Bridge, single notes",
-  "23 | Les Paul PAF: Neck, chordal textures",
-  "24 | Les Paul PAF: Bridge, chordal textures",
-  "19 | Les Paul PAF: Neck, low blues riff",
-  "20 | Les Paul PAF: Bridge, low blues riff",
-  "21 | Les Paul PAF: Neck, shuffle",
-  "22 | Les Paul PAF: Bridge, shuffle",
-  "17 | Les Paul PAF: Neck, single notes",
-  "18 | Les Paul PAF: Bridge, single notes"
+  "23 | Les Paul, PAF-style: Neck, chordal textures",
+  "24 | Les Paul, PAF-style: Bridge, chordal textures",
+  "19 | Les Paul, PAF-style: Neck, low blues riff",
+  "20 | Les Paul, PAF-style: Bridge, low blues riff",
+  "21 | Les Paul, PAF-style: Neck, shuffle",
+  "22 | Les Paul, PAF-style: Bridge, shuffle",
+  "17 | Les Paul, PAF-style: Neck, single notes",
+  "18 | Les Paul, PAF-style: Bridge, single notes"
  ]
 }

@@ -705,7 +705,7 @@
   {
    "n": 7,
    "name": "alnico 2 strat neck single notes",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Neck, single notes",
    "duration": 8.109,
    "files": {
@@ -847,7 +847,7 @@
   {
    "n": 8,
    "name": "alnico 2 strat bridge single notes",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Bridge, single notes",
    "duration": 7.321,
    "files": {
@@ -989,7 +989,7 @@
   {
    "n": 3,
    "name": "alnico 2 strat neck low blues riff",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Neck, low blues riff",
    "duration": 6.955,
    "files": {
@@ -1131,7 +1131,7 @@
   {
    "n": 4,
    "name": "alnico 2 strat bridge low blues riff",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Bridge, low blues riff",
    "duration": 6.346,
    "files": {
@@ -1273,7 +1273,7 @@
   {
    "n": 5,
    "name": "alnico 2 strat neck shuffle",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Neck, shuffle",
    "duration": 6.939,
    "files": {
@@ -1415,7 +1415,7 @@
   {
    "n": 6,
    "name": "alnico 2 strat bridge shuffle",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Bridge, shuffle",
    "duration": 6.939,
    "files": {
@@ -1557,7 +1557,7 @@
   {
    "n": 1,
    "name": "alnico 2 strat neck chordal textures",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Neck, chordal textures",
    "duration": 9.396,
    "files": {
@@ -1699,7 +1699,7 @@
   {
    "n": 2,
    "name": "alnico 2 strat bridge chordal textures",
-   "guitar": "Alnico 2 Strat",
+   "guitar": "Alnico Strat",
    "label": "Bridge, chordal textures",
    "duration": 6.871,
    "files": {
@@ -2977,7 +2977,7 @@
   {
    "n": 23,
    "name": "les paul PAF neck single notes",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Neck, single notes",
    "duration": 7.691,
    "files": {
@@ -3119,7 +3119,7 @@
   {
    "n": 24,
    "name": "les paul PAF bridge single notes",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Bridge, single notes",
    "duration": 8.054,
    "files": {
@@ -3261,7 +3261,7 @@
   {
    "n": 19,
    "name": "les paul PAF neck low blues riff",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Neck, low blues riff",
    "duration": 7.355,
    "files": {
@@ -3403,7 +3403,7 @@
   {
    "n": 20,
    "name": "les paul PAF bridge low blues riff",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Bridge, low blues riff",
    "duration": 7.199,
    "files": {
@@ -3545,7 +3545,7 @@
   {
    "n": 21,
    "name": "les paul PAF neck shuffle",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Neck, shuffle",
    "duration": 7.717,
    "files": {
@@ -3687,7 +3687,7 @@
   {
    "n": 22,
    "name": "les paul PAF bridge shuffle",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Bridge, shuffle",
    "duration": 7.614,
    "files": {
@@ -3829,7 +3829,7 @@
   {
    "n": 17,
    "name": "les paul PAF neck chordal textures",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Neck, chordal textures",
    "duration": 8.183,
    "files": {
@@ -3971,7 +3971,7 @@
   {
    "n": 18,
    "name": "les paul PAF bridge chordal textures",
-   "guitar": "Les Paul PAF",
+   "guitar": "Les Paul, PAF-style",
    "label": "Bridge, chordal textures",
    "duration": 8.598,
    "files": {

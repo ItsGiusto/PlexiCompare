@@ -18,7 +18,7 @@
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Attenuation {#ap-attenuation}
-- When attenuation was on, the amp ran through a Weber Mass 200, with the tone compensation set to 0, and the dial set to "2".
+- When attenuation was on, the amp ran through a Weber Mass 200, with the tone compensation set to 0, and the dial set to "2". Volume was compensated for at the mic preamp.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
 ### Volume {#ap-volume8}

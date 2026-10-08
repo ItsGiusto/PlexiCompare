@@ -2,7 +2,7 @@
 
 - Non-master-volume 50w Marshall clone-build, with 2 EL34s and solid state rectifier
 - Microphone: large diaphragm condenser, 6 ft from the cabinet
-- Speakers: 4x12 Celestion Heritage Greenback G12M, straight cabs
+- Speakers: 4x12 Celestion Heritage Greenback G12M, straight cab
 - Treble: 3
 - Middle: 8
 - Bass: 3

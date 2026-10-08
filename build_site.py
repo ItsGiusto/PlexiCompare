@@ -426,7 +426,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     cfg_path = out / "settings.json"
     cfg = json.loads(cfg_path.read_text(encoding="utf-8")) if cfg_path.exists() else {}
-    cfg.setdefault("title", "Plexi settings, back to back")
+    cfg.setdefault("title", "Plexi circuit variations, back to back")
     cfg.setdefault("intro", "The same DI-ed recordings were re-amped through every setup. Flip between them while it plays and hear what actually changes. See below for more info on each setting and overall setup.")
     cfg.setdefault("settings", {})
     cfg.setdefault("riffs", {})

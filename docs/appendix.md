@@ -34,7 +34,7 @@
 - Later lead-spec Marshalls used split of various values. For this setting on this amp, the bright channel has 2k7 bypassed with 0.68uf.
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
 
-### V1B {#ap-v1b022}
+### V1B coupling cap {#ap-v1b022}
 - Older and bass-spec Marshalls used 22nf
 - Later lead-spec Marshalls used 2.2nf
 <!-- Write about this setting here. Plain text, **bold**, *italics*, [links](https://example.com) and - bullets work. -->
